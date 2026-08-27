@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { AssetWithRelations } from "@/lib/types";
@@ -37,7 +37,7 @@ import {
 } from "lucide-react";
 import { format, isPast, differenceInDays } from "date-fns";
 
-export default function AssetsPage() {
+function AssetsContent() {
   const searchParams = useSearchParams();
   const { location: globalLocation } = useContext(LocationFilterContext);
   const { success, error } = useToast();
@@ -578,5 +578,19 @@ export default function AssetsPage() {
         onSuccess={fetchAssets}
       />
     </div>
+  );
+}
+
+export default function AssetsPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="p-8 text-center text-slate-400">
+          Loading hardware assets directory...
+        </div>
+      }
+    >
+      <AssetsContent />
+    </Suspense>
   );
 }
