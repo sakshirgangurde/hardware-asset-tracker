@@ -1,0 +1,200 @@
+import { z } from "zod";
+
+export const CATEGORIES = [
+  "Laptop",
+  "Desktop",
+  "Monitor",
+  "Peripheral",
+  "Networking",
+  "Other",
+] as const;
+
+export const ASSET_STATUSES = [
+  "IN_STOCK",
+  "IN_USE",
+  "UNDER_REPAIR",
+  "LOST",
+  "SCRAPPED",
+] as const;
+
+export const OFFICE_LOCATIONS = ["HYD", "MUM"] as const;
+
+export const EMPLOYEE_STATUSES = ["ACTIVE", "OFFBOARDED"] as const;
+
+export const MAINTENANCE_OUTCOMES = [
+  "REPAIRED",
+  "UNREPAIRABLE",
+  "PENDING",
+] as const;
+
+export const DISPOSAL_REASONS = [
+  "DAMAGED_BEYOND_REPAIR",
+  "OBSOLETE",
+  "LOST",
+  "STOLEN",
+  "OTHER",
+] as const;
+
+// Asset creation/update schema
+export const assetSchema = z
+  .object({
+    assetTag: z
+      .string()
+      .min(2, "Asset tag must be at least 2 characters")
+      .max(50, "Asset tag is too long")
+      .trim(),
+    name: z
+      .string()
+      .min(2, "Asset name must be at least 2 characters")
+      .max(100, "Asset name is too long")
+      .trim(),
+    category: z.enum(CATEGORIES, {
+      errorMap: () => ({ message: "Please select a valid category" }),
+    }),
+    brand: z.string().min(1, "Brand is required").trim(),
+    model: z.string().min(1, "Model is required").trim(),
+    serialNumber: z
+      .string()
+      .trim()
+      .optional()
+      .nullable()
+      .transform((val) => (val && val.trim().length > 0 ? val.trim() : null)),
+    status: z.enum(ASSET_STATUSES, {
+      errorMap: () => ({ message: "Please select a valid status" }),
+    }),
+    employeeId: z
+      .string()
+      .optional()
+      .nullable()
+      .transform((val) => (val && val.trim().length > 0 ? val : null)),
+    officeLocation: z.enum(OFFICE_LOCATIONS, {
+      errorMap: () => ({ message: "Office location must be HYD or MUM" }),
+    }),
+    purchaseDate: z.coerce.date({
+      errorMap: () => ({ message: "Valid purchase date is required" }),
+    }),
+    vendor: z
+      .string()
+      .optional()
+      .nullable()
+      .transform((val) => (val && val.trim().length > 0 ? val.trim() : null)),
+    warrantyExpiry: z.coerce.date({
+      errorMap: () => ({ message: "Valid warranty expiry date is required" }),
+    }),
+    accessories: z
+      .string()
+      .optional()
+      .nullable()
+      .transform((val) => (val && val.trim().length > 0 ? val.trim() : null)),
+    notes: z
+      .string()
+      .optional()
+      .nullable()
+      .transform((val) => (val && val.trim().length > 0 ? val.trim() : null)),
+  })
+  .refine(
+    (data) => {
+      return data.warrantyExpiry >= data.purchaseDate;
+    },
+    {
+      message: "Warranty expiry date cannot be earlier than purchase date",
+      path: ["warrantyExpiry"],
+    }
+  )
+  .refine(
+    (data) => {
+      if (data.status === "IN_USE") {
+        return !!data.employeeId;
+      }
+      return true;
+    },
+    {
+      message: "Employee assignment is required when status is IN_USE",
+      path: ["employeeId"],
+    }
+  );
+
+export type AssetFormValues = z.infer<typeof assetSchema>;
+
+// Quick Assignment schema
+export const assignAssetSchema = z.object({
+  employeeId: z.string().min(1, "Please select an employee"),
+  notes: z.string().optional().nullable(),
+});
+
+// Quick Return schema
+export const returnAssetSchema = z.object({
+  notes: z.string().optional().nullable(),
+  newLocation: z.enum(OFFICE_LOCATIONS).optional(),
+});
+
+// Maintenance Log schema
+export const maintenanceSchema = z.object({
+  dateReported: z.coerce.date().default(() => new Date()),
+  issueDescription: z
+    .string()
+    .min(5, "Issue description must be at least 5 characters"),
+  sentTo: z.string().min(2, "Service vendor / technician name is required"),
+  dateReturned: z.coerce.date().optional().nullable(),
+  outcome: z.enum(MAINTENANCE_OUTCOMES).default("PENDING"),
+  performedBy: z.string().min(2, "Logged by is required"),
+});
+
+export type MaintenanceFormValues = z.infer<typeof maintenanceSchema>;
+
+// Disposal schema
+export const disposalSchema = z.object({
+  disposalDate: z.coerce.date().default(() => new Date()),
+  disposalReason: z.enum(DISPOSAL_REASONS, {
+    errorMap: () => ({ message: "Please select a valid disposal reason" }),
+  }),
+  notes: z.string().optional().nullable(),
+});
+
+export type DisposalFormValues = z.infer<typeof disposalSchema>;
+
+// Employee schema
+export const employeeSchema = z.object({
+  name: z.string().min(2, "Name must be at least 2 characters").trim(),
+  email: z.string().email("Invalid email address").toLowerCase().trim(),
+  department: z.string().min(2, "Department is required").trim(),
+  officeLocation: z.enum(OFFICE_LOCATIONS, {
+    errorMap: () => ({ message: "Office location must be HYD or MUM" }),
+  }),
+  status: z.enum(EMPLOYEE_STATUSES).default("ACTIVE"),
+  startDate: z.coerce.date().default(() => new Date()),
+  endDate: z.coerce.date().optional().nullable(),
+  notes: z
+    .string()
+    .optional()
+    .nullable()
+    .transform((val) => (val && val.trim().length > 0 ? val.trim() : null)),
+});
+
+export type EmployeeFormValues = z.infer<typeof employeeSchema>;
+
+// Offboard Employee schema
+export const offboardEmployeeSchema = z.object({
+  endDate: z.coerce.date().default(() => new Date()),
+  notes: z.string().optional().nullable(),
+  assetActions: z
+    .array(
+      z.object({
+        assetId: z.string(),
+        action: z.enum(["RETURN_TO_STOCK", "MARK_LOST"]),
+        notes: z.string().optional().nullable(),
+        location: z.enum(OFFICE_LOCATIONS).optional(),
+      })
+    )
+    .optional(),
+});
+
+export type OffboardFormValues = z.infer<typeof offboardEmployeeSchema>;
+
+// Login Schema
+export const loginSchema = z.object({
+  email: z.string().email("Please enter a valid email address").trim(),
+  password: z.string().min(6, "Password must be at least 6 characters"),
+});
+
+export type LoginFormValues = z.infer<typeof loginSchema>;

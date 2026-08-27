@@ -1,0 +1,111 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model AdminUser {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  passwordHash String
+  name         String   @default("Admin User")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Employee {
+  id             String              @id @default(uuid())
+  name           String
+  email          String              @unique
+  department     String
+  officeLocation String              @default("HYD") // HYD or MUM
+  status         String              @default("ACTIVE") // ACTIVE or OFFBOARDED
+  startDate      DateTime            @default(now())
+  endDate        DateTime?
+  notes          String?
+  createdAt      DateTime            @default(now())
+  updatedAt      DateTime            @updatedAt
+  assets         Asset[]
+  assignments    AssignmentHistory[]
+
+  @@index([status])
+  @@index([officeLocation])
+}
+
+model Asset {
+  id             String              @id @default(uuid())
+  assetTag       String              @unique
+  name           String
+  category       String              // Laptop, Desktop, Monitor, Peripheral, Networking, Other
+  brand          String
+  model          String
+  serialNumber   String?             @unique
+  status         String              @default("IN_STOCK") // IN_STOCK, IN_USE, UNDER_REPAIR, LOST, SCRAPPED
+  employeeId     String?
+  employee       Employee?           @relation(fields: [employeeId], references: [id], onDelete: SetNull)
+  officeLocation String              @default("HYD") // HYD or MUM
+  purchaseDate   DateTime            @default(now())
+  vendor         String?
+  warrantyExpiry DateTime
+  accessories    String?
+  notes          String?
+  createdAt      DateTime            @default(now())
+  updatedAt      DateTime            @updatedAt
+  assignments    AssignmentHistory[]
+  maintenance    MaintenanceLog[]
+  disposals      DisposalRecord[]
+
+  @@index([status])
+  @@index([category])
+  @@index([officeLocation])
+  @@index([employeeId])
+  @@index([warrantyExpiry])
+}
+
+model AssignmentHistory {
+  id           String    @id @default(uuid())
+  assetId      String
+  asset        Asset     @relation(fields: [assetId], references: [id], onDelete: Cascade)
+  employeeId   String
+  employee     Employee  @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+  assignedDate DateTime  @default(now())
+  returnedDate DateTime?
+  notes        String?
+  createdAt    DateTime  @default(now())
+
+  @@index([assetId])
+  @@index([employeeId])
+  @@index([returnedDate])
+}
+
+model MaintenanceLog {
+  id               String    @id @default(uuid())
+  assetId          String
+  asset            Asset     @relation(fields: [assetId], references: [id], onDelete: Cascade)
+  dateReported     DateTime  @default(now())
+  issueDescription String
+  sentTo           String
+  dateReturned     DateTime?
+  outcome          String    @default("PENDING") // REPAIRED, UNREPAIRABLE, PENDING
+  performedBy      String
+  createdAt        DateTime  @default(now())
+
+  @@index([assetId])
+  @@index([outcome])
+}
+
+model DisposalRecord {
+  id             String   @id @default(uuid())
+  assetId        String
+  asset          Asset    @relation(fields: [assetId], references: [id], onDelete: Cascade)
+  disposalDate   DateTime @default(now())
+  disposalReason String   // DAMAGED_BEYOND_REPAIR, OBSOLETE, LOST, STOLEN, OTHER
+  notes          String?
+  createdAt      DateTime @default(now())
+
+  @@index([assetId])
+  @@index([disposalReason])
+}
