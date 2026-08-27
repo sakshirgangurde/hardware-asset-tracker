@@ -53,10 +53,13 @@ export async function POST(request: NextRequest) {
 
     setSessionCookie(response, token);
     return response;
-  } catch (error) {
+  } catch (error: any) {
     console.error("Login error:", error);
     return NextResponse.json(
-      { error: "An unexpected error occurred during login" },
+      {
+        error: "Database error during login",
+        details: error?.message || String(error),
+      },
       { status: 500 }
     );
   }
