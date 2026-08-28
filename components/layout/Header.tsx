@@ -6,7 +6,6 @@ import {
   Menu,
   LogOut,
   User,
-  Building2,
   Search,
   Bell,
   Sparkles,
@@ -97,25 +96,6 @@ export function Header({
 
       {/* Right section: Office Location Selector + User Menu */}
       <div className="flex items-center gap-3">
-        {/* Office Location Filter Pill */}
-        <div className="hidden sm:flex items-center gap-1 bg-slate-850 border border-slate-700/60 rounded-xl p-1 text-xs">
-          <span className="text-slate-400 px-2 font-medium flex items-center gap-1">
-            <Building2 className="w-3.5 h-3.5 text-slate-400" /> Office:
-          </span>
-          {(["ALL", "HYD", "MUM"] as const).map((loc) => (
-            <button
-              key={loc}
-              onClick={() => onLocationChange(loc)}
-              className={`px-2.5 py-1 rounded-lg font-semibold transition-all ${
-                selectedLocation === loc
-                  ? "bg-emerald-600 text-white shadow-sm"
-                  : "text-slate-400 hover:text-slate-200 hover:bg-slate-800"
-              }`}
-            >
-              {loc === "ALL" ? "All Locations" : loc}
-            </button>
-          ))}
-        </div>
 
         {/* User Dropdown */}
         <div className="relative">
@@ -145,9 +125,6 @@ export function Header({
                 <div className="px-3 py-2 border-b border-slate-800 mb-1">
                   <p className="text-xs font-bold text-white">{adminUser?.name}</p>
                   <p className="text-[11px] text-slate-400 truncate">{adminUser?.email}</p>
-                </div>
-                <div className="px-3 py-1.5 text-[11px] text-emerald-400 font-medium flex items-center gap-1.5">
-                  <Sparkles className="w-3.5 h-3.5" /> Full Access Administrator
                 </div>
                 <button
                   onClick={handleLogout}
