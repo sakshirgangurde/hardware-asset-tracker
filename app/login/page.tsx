@@ -8,10 +8,8 @@ import {
   Lock,
   Mail,
   ArrowRight,
-  ShieldCheck,
   Sparkles,
   Loader2,
-  Server,
 } from "lucide-react";
 
 export default function LoginPage() {
@@ -47,7 +45,7 @@ export default function LoginPage() {
         throw new Error(data.error || "Authentication failed");
       }
 
-      success("Access Granted", `Welcome back, ${data.user.name}!`);
+      success("Login successful", "");
       router.push("/dashboard");
       router.refresh();
     } catch (err: any) {
@@ -77,12 +75,7 @@ export default function LoginPage() {
         {/* Top subtle glow */}
         <div className="absolute -top-10 -right-10 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
 
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-lg font-bold text-white">Administrator Login</h2>
-          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold">
-            <ShieldCheck className="w-3.5 h-3.5" /> Secure Session
-          </span>
-        </div>
+        <h2 className="text-lg font-bold text-white mb-6">Administrator Login</h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -153,11 +146,6 @@ export default function LoginPage() {
         </div>
       </div>
 
-      {/* Footer Info */}
-      <div className="mt-6 text-center text-xs text-slate-400 flex items-center justify-center gap-2">
-        <Server className="w-3.5 h-3.5 text-slate-400" />
-        <span>PostgreSQL & Prisma ORM • HYD & MUM Offices</span>
-      </div>
     </div>
   );
 }
