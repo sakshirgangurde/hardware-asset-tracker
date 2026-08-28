@@ -1,5 +1,5 @@
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -43,27 +43,49 @@ model Asset {
   category       String              // Laptop, Desktop, Monitor, Peripheral, Networking, Other
   brand          String
   model          String
-  serialNumber   String?             @unique
-  status         String              @default("IN_STOCK") // IN_STOCK, IN_USE, UNDER_REPAIR, LOST, SCRAPPED
-  employeeId     String?
-  employee       Employee?           @relation(fields: [employeeId], references: [id], onDelete: SetNull)
-  officeLocation String              @default("HYD") // HYD or MUM
-  purchaseDate   DateTime            @default(now())
-  vendor         String?
-  warrantyExpiry DateTime
-  accessories    String?
-  notes          String?
-  createdAt      DateTime            @default(now())
-  updatedAt      DateTime            @updatedAt
-  assignments    AssignmentHistory[]
-  maintenance    MaintenanceLog[]
-  disposals      DisposalRecord[]
+  serialNumber       String?
+  status             String              @default("IN_STOCK") // IN_STOCK, IN_USE, UNDER_REPAIR, LOST, SCRAPPED
+  employeeId         String?
+  employee           Employee?           @relation(fields: [employeeId], references: [id], onDelete: SetNull)
+  officeLocation     String              @default("MUM") // HYD or MUM
+  purchaseDate       DateTime?
+  vendor             String?
+  warrantyExpiry     DateTime?
+  accessories        String?
+  notes              String?
+  // Excel Sheet Specific Fields
+  sesaId             String?
+  processor          String?
+  ram                String?
+  storage            String?
+  configuration      String?
+  inspectionDone     String?             // "Yes" | "NO"
+  invoiceLink        String?
+  warrantyStartDate  DateTime?
+  warrantyEndDate    DateTime?
+  extendWarrantyDate DateTime?
+  extendUpto         String?
+  serviceHistory     String?
+  finalSummary       String?
+  auditDate          String?
+  antivirus          String?             // "Yes", "NO", "Installed", "Expired", "Not Avai", "NA"
+  charger            String?
+  currentUser        String?             // Raw user string from sheet
+  lastUser           String?             // Multiline historical users list
+  stateDetail        String?             // Original detailed status (e.g. Usable-SESA, Usable-NonSESA)
+
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  assignments        AssignmentHistory[]
+  maintenance        MaintenanceLog[]
+  disposals          DisposalRecord[]
 
   @@index([status])
   @@index([category])
   @@index([officeLocation])
   @@index([employeeId])
-  @@index([warrantyExpiry])
+  @@index([sesaId])
+  @@index([serialNumber])
 }
 
 model AssignmentHistory {

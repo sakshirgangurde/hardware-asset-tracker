@@ -36,12 +36,11 @@ export function CsvImportModal({
   const [isImporting, setIsImporting] = useState(false);
 
   const handleDownloadSample = () => {
-    const sampleContent = `asset_tag,name,category,brand,model,serial_number,status,employee_email,office_location,purchase_date,vendor,warranty_expiry,accessories,notes
-AST-LAP-901,ThinkPad X1 Carbon Gen 12,Laptop,Lenovo,ThinkPad X1 32GB,PF9928310,IN_STOCK,,HYD,2024-01-15,Lenovo Direct,2027-01-15,65W GaN Charger,Buffer stock
-AST-MON-902,Dell UltraSharp 32 4K,Monitor,Dell,U3223QE,CN99102488,IN_STOCK,,MUM,2024-03-01,Dell Direct,2027-03-01,Stand and TB4 Cable,Design department spare
-AST-LAP-903,MacBook Air 15 M3,Laptop,Apple,MBA 15 16GB 512GB,C02KK99102,IN_USE,aarav.sharma@company.com,HYD,2024-02-10,Apple Corp,2027-02-10,35W Adapter,Engineering loaner`;
+    const sampleContent = `SR,Asset ID,Current User,Last User,Serial Number/ Service Tag,Invoice link,SESA ID,STATE,Location,Type,Processor ,RAM,SSD/HDD,Configuration of Laptop,Inspection Done?,Lenovo,Model#,Date of purchase,Warrenty Start date ,Warrenty End Date,Extend Date of warrenty,Extend Upto,,Service History,Final Summary,Audit Date ,Antivirous ,Charger,
+1,WB-271,Anirudha Choudhari,NA,PF5E9ZZZ,Invoice,SESA428476,In Use,Mumbai,Laptop,Intel Ultra 7 (155U),40 GB,1 TB SSD,"ThinkPad E16 Gen 2, 40GB RAM, 1TB SSD",Yes,Lenovo,ThinkPad E16 Gen 2,26 June 25,26 June 25,26 June 28,1 June 30,,,,Good Machine,April,Yes,Yes,
+2,WBM-039,In Stock / 310,NA,CN-01DX5D,Link,NA,In Stock,Mumbai,Monitor,NA,NA,NA,,NO,Dell,SE2225HM,16-Mar-26,16-Mar-26,16-Mar-27,,,,,April,NA,,`;
 
-    triggerCsvDownload(sampleContent, "hardware_assets_sample_template.csv");
+    triggerCsvDownload(sampleContent, "hardware_assets_excel_template.csv");
   };
 
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -52,23 +51,16 @@ AST-LAP-903,MacBook Air 15 M3,Laptop,Apple,MBA 15 16GB 512GB,C02KK99102,IN_USE,a
     setIsParsing(true);
 
     try {
-      // 1. Fetch existing tags and active employees to validate against
-      const [assetsRes, empRes] = await Promise.all([
-        fetch("/api/assets?all=true").then((r) => r.json()),
-        fetch("/api/employees?status=ACTIVE").then((r) => r.json()),
-      ]);
+      // 1. Fetch existing tags to validate against
+      const assetsRes = await fetch("/api/assets?all=true").then((r) => r.json());
 
       const existingTags = new Set<string>(
         (assetsRes.assets || []).map((a: any) => (a.assetTag || "").toUpperCase())
       );
 
-      const activeEmployeesMap = new Map<string, string>(
-        (empRes.employees || []).map((emp: any) => [emp.email.toLowerCase(), emp.id])
-      );
-
       // 2. Read and parse file
       const text = await file.text();
-      const result = parseAndValidateAssetCsv(text, existingTags, activeEmployeesMap);
+      const result = parseAndValidateAssetCsv(text, existingTags);
 
       setParsedRows(result.rows);
       setTotalValid(result.totalValid);
@@ -83,7 +75,7 @@ AST-LAP-903,MacBook Air 15 M3,Laptop,Apple,MBA 15 16GB 512GB,C02KK99102,IN_USE,a
   const handleImport = async () => {
     const validItems = parsedRows.filter((r) => r.isValid).map((r) => r.data);
     if (validItems.length === 0) {
-      error("No valid rows", "Please fix the validation errors before importing.");
+      error("No valid rows", "Please fix validation errors before importing.");
       return;
     }
 
@@ -100,10 +92,11 @@ AST-LAP-903,MacBook Air 15 M3,Laptop,Apple,MBA 15 16GB 512GB,C02KK99102,IN_USE,a
         throw new Error(json.error || "Import failed");
       }
 
-      success(
-        "Import Complete",
-        `Successfully registered ${json.importedCount} new hardware assets.`
-      );
+      const msg = json.updatedCount > 0
+        ? `Successfully processed ${json.importedCount} assets (${json.createdCount} new, ${json.updatedCount} updated).`
+        : `Successfully imported ${json.importedCount} new assets into the database.`;
+
+      success("Import Complete", msg);
       onSuccess();
       handleReset();
       onClose();
@@ -129,8 +122,8 @@ AST-LAP-903,MacBook Air 15 M3,Laptop,Apple,MBA 15 16GB 512GB,C02KK99102,IN_USE,a
         handleReset();
         onClose();
       }}
-      title="Bulk Import Assets via CSV"
-      subtitle="Upload a CSV file to validate and batch-register hardware assets."
+      title="Bulk Import Assets from CSV / Excel"
+      subtitle="Upload your CSV sheet to validate and batch-load all hardware assets into the master database."
       maxWidth="4xl"
     >
       <div className="space-y-5">
@@ -141,8 +134,8 @@ AST-LAP-903,MacBook Air 15 M3,Laptop,Apple,MBA 15 16GB 512GB,C02KK99102,IN_USE,a
               <FileSpreadsheet className="w-5 h-5" />
             </div>
             <div>
-              <p className="text-sm font-semibold text-white">Need the CSV Template?</p>
-              <p className="text-xs text-slate-400">Download formatted template with columns & sample data</p>
+              <p className="text-sm font-semibold text-white">Need the Excel Column Template?</p>
+              <p className="text-xs text-slate-400">Download formatted CSV template matching your Excel register</p>
             </div>
           </div>
           <button
@@ -169,10 +162,10 @@ AST-LAP-903,MacBook Air 15 M3,Laptop,Apple,MBA 15 16GB 512GB,C02KK99102,IN_USE,a
             />
             <UploadCloud className="w-12 h-12 text-slate-400 mx-auto mb-3" />
             <p className="text-sm font-semibold text-slate-200">
-              Click to select a CSV file
+              Click to select your Hardware CSV file
             </p>
             <p className="text-xs text-slate-400 mt-1">
-              Supports .csv files with standard columns
+              Supports your exact Excel columns (Asset ID, Current User, SESA ID, Processor, RAM, Storage, etc.)
             </p>
             {isParsing && (
               <div className="mt-4 flex items-center justify-center gap-2 text-xs text-emerald-400">
@@ -188,7 +181,7 @@ AST-LAP-903,MacBook Air 15 M3,Laptop,Apple,MBA 15 16GB 512GB,C02KK99102,IN_USE,a
               <div className="flex items-center gap-4 text-xs font-medium">
                 <span className="text-slate-300">File: <strong className="text-white">{fileName}</strong></span>
                 <span className="flex items-center gap-1.5 text-emerald-400">
-                  <CheckCircle2 className="w-4 h-4" /> {totalValid} Valid Rows
+                  <CheckCircle2 className="w-4 h-4" /> {totalValid} Ready to Import
                 </span>
                 {totalInvalid > 0 && (
                   <span className="flex items-center gap-1.5 text-rose-400">
@@ -205,18 +198,20 @@ AST-LAP-903,MacBook Air 15 M3,Laptop,Apple,MBA 15 16GB 512GB,C02KK99102,IN_USE,a
             </div>
 
             {/* Preview Table */}
-            <div className="border border-slate-800 rounded-xl overflow-hidden max-h-72 overflow-y-auto">
+            <div className="border border-slate-800 rounded-xl overflow-hidden max-h-80 overflow-y-auto">
               <table className="w-full text-left text-xs text-slate-300">
-                <thead className="bg-slate-850 sticky top-0 text-[11px] uppercase tracking-wider text-slate-400 border-b border-slate-800">
+                <thead className="bg-slate-850 sticky top-0 text-[11px] uppercase tracking-wider text-slate-400 border-b border-slate-800 z-10">
                   <tr>
-                    <th className="py-2 px-3">Status</th>
-                    <th className="py-2 px-3">Tag</th>
-                    <th className="py-2 px-3">Name</th>
-                    <th className="py-2 px-3">Category</th>
-                    <th className="py-2 px-3">Status</th>
-                    <th className="py-2 px-3">Assignee</th>
-                    <th className="py-2 px-3">Location</th>
-                    <th className="py-2 px-3">Validation Details</th>
+                    <th className="py-2.5 px-3">Status</th>
+                    <th className="py-2.5 px-3">Asset ID</th>
+                    <th className="py-2.5 px-3">SESA ID</th>
+                    <th className="py-2.5 px-3">Specs / Model</th>
+                    <th className="py-2.5 px-3">Category</th>
+                    <th className="py-2.5 px-3">State</th>
+                    <th className="py-2.5 px-3">Current User</th>
+                    <th className="py-2.5 px-3">Past Users</th>
+                    <th className="py-2.5 px-3">Location</th>
+                    <th className="py-2.5 px-3">Details</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-800">
@@ -225,30 +220,38 @@ AST-LAP-903,MacBook Air 15 M3,Laptop,Apple,MBA 15 16GB 512GB,C02KK99102,IN_USE,a
                       key={row.rowNumber}
                       className={row.isValid ? "hover:bg-slate-800/40" : "bg-rose-950/20 hover:bg-rose-950/30"}
                     >
-                      <td className="py-2 px-3 font-semibold">
+                      <td className="py-2.5 px-3 font-semibold whitespace-nowrap">
                         {row.isValid ? (
                           <span className="inline-flex items-center gap-1 text-emerald-400">
                             <CheckCircle2 className="w-3.5 h-3.5" /> OK
                           </span>
                         ) : (
                           <span className="inline-flex items-center gap-1 text-rose-400">
-                            <AlertCircle className="w-3.5 h-3.5" /> Invalid
+                            <AlertCircle className="w-3.5 h-3.5" /> Error
                           </span>
                         )}
                       </td>
-                      <td className="py-2 px-3 font-mono font-bold text-white">
-                        {row.raw.asset_tag || row.raw.tag || "N/A"}
+                      <td className="py-2.5 px-3 font-mono font-bold text-white whitespace-nowrap">
+                        {row.data?.assetTag || "N/A"}
                       </td>
-                      <td className="py-2 px-3 text-slate-200">{row.raw.name || row.raw.asset_name}</td>
-                      <td className="py-2 px-3">{row.raw.category}</td>
-                      <td className="py-2 px-3">{row.raw.status || "IN_STOCK"}</td>
-                      <td className="py-2 px-3 text-slate-400 truncate max-w-[120px]">
-                        {row.raw.employee_email || "-"}
+                      <td className="py-2.5 px-3 font-mono text-indigo-300">
+                        {row.data?.sesaId || "--"}
                       </td>
-                      <td className="py-2 px-3">{row.raw.office_location || "HYD"}</td>
-                      <td className="py-2 px-3">
+                      <td className="py-2.5 px-3 text-slate-200 max-w-[180px] truncate">
+                        {row.data?.brand} {row.data?.model || row.data?.processor}
+                      </td>
+                      <td className="py-2.5 px-3 whitespace-nowrap">{row.data?.category}</td>
+                      <td className="py-2.5 px-3 whitespace-nowrap">{row.data?.stateDetail || row.data?.status}</td>
+                      <td className="py-2.5 px-3 text-slate-300 max-w-[140px] truncate">
+                        {row.data?.currentUser || "In Stock"}
+                      </td>
+                      <td className="py-2.5 px-3 text-slate-400 max-w-[140px] truncate" title={row.data?.lastUser || ""}>
+                        {row.data?.lastUser ? row.data.lastUser.replace(/\n/g, ", ") : "--"}
+                      </td>
+                      <td className="py-2.5 px-3 whitespace-nowrap">{row.data?.officeLocation}</td>
+                      <td className="py-2.5 px-3">
                         {row.isValid ? (
-                          <span className="text-emerald-400/80">Ready to insert</span>
+                          <span className="text-emerald-400/90 text-[11px]">Ready for DB sync</span>
                         ) : (
                           <div className="space-y-0.5">
                             {row.errors.map((err, i) => (
@@ -288,12 +291,12 @@ AST-LAP-903,MacBook Air 15 M3,Laptop,Apple,MBA 15 16GB 512GB,C02KK99102,IN_USE,a
             {isImporting ? (
               <>
                 <Loader2 className="w-4 h-4 animate-spin" />
-                Importing {totalValid} Assets...
+                Importing {totalValid} Assets to DB...
               </>
             ) : (
               <>
                 <Layers className="w-4 h-4" />
-                Import {totalValid} Valid Assets
+                Import {totalValid} Assets into Database
               </>
             )}
           </button>

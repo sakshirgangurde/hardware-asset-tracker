@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { assetSchema } from "@/lib/validations";
-
 import { MOCK_ASSETS } from "@/lib/mockData";
 
 export const dynamic = "force-dynamic";
@@ -22,12 +21,22 @@ export async function GET(request: NextRequest) {
 
     if (search) {
       where.OR = [
-        { assetTag: { contains: search } },
-        { name: { contains: search } },
-        { brand: { contains: search } },
-        { model: { contains: search } },
-        { serialNumber: { contains: search } },
-        { employee: { name: { contains: search } } },
+        { assetTag: { contains: search, mode: "insensitive" } },
+        { name: { contains: search, mode: "insensitive" } },
+        { brand: { contains: search, mode: "insensitive" } },
+        { model: { contains: search, mode: "insensitive" } },
+        { serialNumber: { contains: search, mode: "insensitive" } },
+        { sesaId: { contains: search, mode: "insensitive" } },
+        { processor: { contains: search, mode: "insensitive" } },
+        { ram: { contains: search, mode: "insensitive" } },
+        { storage: { contains: search, mode: "insensitive" } },
+        { configuration: { contains: search, mode: "insensitive" } },
+        { currentUser: { contains: search, mode: "insensitive" } },
+        { lastUser: { contains: search, mode: "insensitive" } },
+        { finalSummary: { contains: search, mode: "insensitive" } },
+        { notes: { contains: search, mode: "insensitive" } },
+        { employee: { name: { contains: search, mode: "insensitive" } } },
+        { employee: { email: { contains: search, mode: "insensitive" } } },
       ];
     }
 
@@ -92,7 +101,7 @@ export async function GET(request: NextRequest) {
       pagination: {
         total: MOCK_ASSETS.length,
         page: 1,
-        limit: 25,
+        limit: 50,
         totalPages: 1,
       },
     });
@@ -125,32 +134,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Check serialNumber if provided
-    if (data.serialNumber) {
-      const existingSerial = await prisma.asset.findUnique({
-        where: { serialNumber: data.serialNumber },
-      });
-      if (existingSerial) {
-        return NextResponse.json(
-          { error: `Serial Number "${data.serialNumber}" is already in use.` },
-          { status: 400 }
-        );
-      }
-    }
-
-    // If assigned to employee, verify employee exists and is active
-    if (data.employeeId) {
-      const emp = await prisma.employee.findUnique({
-        where: { id: data.employeeId },
-      });
-      if (!emp) {
-        return NextResponse.json(
-          { error: "Assigned employee does not exist." },
-          { status: 400 }
-        );
-      }
-    }
-
     // Transaction to create asset and open assignment history if IN_USE
     const newAsset = await prisma.$transaction(async (tx) => {
       const asset = await tx.asset.create({
@@ -169,6 +152,27 @@ export async function POST(request: NextRequest) {
           warrantyExpiry: data.warrantyExpiry,
           accessories: data.accessories,
           notes: data.notes,
+
+          // Custom Excel Columns
+          sesaId: data.sesaId,
+          processor: data.processor,
+          ram: data.ram,
+          storage: data.storage,
+          configuration: data.configuration,
+          inspectionDone: data.inspectionDone,
+          invoiceLink: data.invoiceLink,
+          warrantyStartDate: data.warrantyStartDate,
+          warrantyEndDate: data.warrantyEndDate,
+          extendWarrantyDate: data.extendWarrantyDate,
+          extendUpto: data.extendUpto,
+          serviceHistory: data.serviceHistory,
+          finalSummary: data.finalSummary,
+          auditDate: data.auditDate,
+          antivirus: data.antivirus,
+          charger: data.charger,
+          currentUser: data.currentUser,
+          lastUser: data.lastUser,
+          stateDetail: data.stateDetail,
         },
         include: {
           employee: true,

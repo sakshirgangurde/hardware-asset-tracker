@@ -2,29 +2,35 @@ export type AssetCategory =
   | "Laptop"
   | "Desktop"
   | "Monitor"
+  | "Support Device"
+  | "TV"
   | "Peripheral"
   | "Networking"
-  | "Other";
+  | "Other"
+  | string;
 
 export type AssetStatus =
   | "IN_STOCK"
   | "IN_USE"
   | "UNDER_REPAIR"
   | "LOST"
-  | "SCRAPPED";
+  | "SCRAPPED"
+  | "RETURNED"
+  | string;
 
-export type OfficeLocation = "HYD" | "MUM";
+export type OfficeLocation = "HYD" | "MUM" | "Mumbai" | "Hyderabad" | string;
 
-export type EmployeeStatus = "ACTIVE" | "OFFBOARDED";
+export type EmployeeStatus = "ACTIVE" | "OFFBOARDED" | string;
 
-export type MaintenanceOutcome = "REPAIRED" | "UNREPAIRABLE" | "PENDING";
+export type MaintenanceOutcome = "REPAIRED" | "UNREPAIRABLE" | "PENDING" | string;
 
 export type DisposalReason =
   | "DAMAGED_BEYOND_REPAIR"
   | "OBSOLETE"
   | "LOST"
   | "STOLEN"
-  | "OTHER";
+  | "OTHER"
+  | string;
 
 export interface AssetWithRelations {
   id: string;
@@ -45,11 +51,33 @@ export interface AssetWithRelations {
     status: EmployeeStatus;
   } | null;
   officeLocation: OfficeLocation;
-  purchaseDate: string | Date;
+  purchaseDate: string | Date | null;
   vendor: string | null;
-  warrantyExpiry: string | Date;
+  warrantyExpiry: string | Date | null;
   accessories: string | null;
   notes: string | null;
+
+  // Custom Excel Columns
+  sesaId?: string | null;
+  processor?: string | null;
+  ram?: string | null;
+  storage?: string | null;
+  configuration?: string | null;
+  inspectionDone?: string | null;
+  invoiceLink?: string | null;
+  warrantyStartDate?: string | Date | null;
+  warrantyEndDate?: string | Date | null;
+  extendWarrantyDate?: string | Date | null;
+  extendUpto?: string | null;
+  serviceHistory?: string | null;
+  finalSummary?: string | null;
+  auditDate?: string | null;
+  antivirus?: string | null;
+  charger?: string | null;
+  currentUser?: string | null;
+  lastUser?: string | null;
+  stateDetail?: string | null;
+
   createdAt: string | Date;
   updatedAt: string | Date;
   assignments?: AssignmentHistoryWithRelations[];

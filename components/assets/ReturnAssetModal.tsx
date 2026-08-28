@@ -21,7 +21,7 @@ export function ReturnAssetModal({
 }: ReturnAssetModalProps) {
   const { success, error } = useToast();
   const [notes, setNotes] = useState("");
-  const [location, setLocation] = useState<"HYD" | "MUM">(asset?.officeLocation || "HYD");
+  const [location, setLocation] = useState<"HYD" | "MUM">((asset?.officeLocation as "HYD" | "MUM") || "HYD");
   const [loading, setLoading] = useState(false);
 
   if (!asset) return null;
