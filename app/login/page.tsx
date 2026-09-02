@@ -8,7 +8,6 @@ import {
   Lock,
   Mail,
   ArrowRight,
-  Sparkles,
   Loader2,
 } from "lucide-react";
 
@@ -129,21 +128,6 @@ export default function LoginPage() {
             )}
           </button>
         </form>
-
-        {/* Demo Quick Fill Button */}
-        <div className="mt-6 pt-5 border-t border-slate-800/80">
-          <button
-            type="button"
-            onClick={fillDemoCredentials}
-            className="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-750 border border-slate-700/80 text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center justify-center gap-2 transition-all group"
-          >
-            <Sparkles className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
-            Auto-Fill Demo Admin Credentials
-          </button>
-          <p className="text-[11px] text-slate-400 text-center mt-2">
-            Demo: <code className="text-slate-300">admin@hardwaretracker.com</code> / <code className="text-slate-300">adminpassword123</code>
-          </p>
-        </div>
       </div>
 
     </div>

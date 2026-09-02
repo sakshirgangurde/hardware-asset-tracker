@@ -91,10 +91,10 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
         </div>
         <div className="grid grid-cols-2 gap-2 text-center text-xs font-semibold">
           <div className="bg-slate-800/70 border border-slate-700/40 rounded-lg py-1 px-2 text-slate-200">
-            HYD Hub
+            MUM Hub
           </div>
           <div className="bg-slate-800/70 border border-slate-700/40 rounded-lg py-1 px-2 text-slate-200">
-            MUM Hub
+            HYD Hub
           </div>
         </div>
       </div>

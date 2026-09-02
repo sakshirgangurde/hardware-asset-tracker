@@ -350,7 +350,7 @@ export default function DashboardPage() {
           </div>
 
           <div className="space-y-4">
-            {kpis?.locationBreakdown.map((loc) => (
+            {[...(kpis?.locationBreakdown ?? [])].sort((a, b) => (a.location === "MUM" ? -1 : b.location === "MUM" ? 1 : 0)).map((loc) => (
               <div
                 key={loc.location}
                 className="p-3.5 rounded-xl bg-slate-850 border border-slate-700/60"

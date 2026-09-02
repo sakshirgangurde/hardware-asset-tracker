@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
         user = {
           id: "62d48148-9cd1-4e33-930d-991faacbab69",
           email: "admin@hardwaretracker.com",
-          name: "Global IT Administrator",
+          name: "IT Administrator",
           passwordHash: "",
         };
       } else {

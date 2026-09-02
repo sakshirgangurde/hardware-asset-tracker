@@ -25,7 +25,7 @@ async function main() {
     data: {
       email: "admin@hardwaretracker.com",
       passwordHash,
-      name: "Global IT Administrator",
+      name: "IT Administrator",
     },
   });
   console.log(`👤 Created Admin: ${admin.email} / adminpassword123`);
