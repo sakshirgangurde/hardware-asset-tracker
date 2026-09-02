@@ -130,15 +130,13 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
       </nav>
 
       {/* Security & System Info Footer */}
-      <div className="p-4 border-t border-slate-800/80 bg-slate-900/60">
+      {/* <div className="p-4 border-t border-slate-800/80 bg-slate-900/60">
         <div className="flex items-center gap-2.5 px-3 py-2 rounded-xl bg-slate-800/50 border border-slate-700/40 text-xs text-slate-400">
           <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
           <div className="truncate">
-            <p className="font-semibold text-slate-200">Supabase & Prisma</p>
-            <p className="text-[10px] text-slate-400">PostgreSQL Ready</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </aside>
   );
 }
