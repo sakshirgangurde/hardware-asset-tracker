@@ -19,21 +19,21 @@ import {
   Plus,
   FileSpreadsheet,
   Download,
-  Filter,
   Eye,
   Edit2,
   UserCheck,
   RotateCcw,
   Wrench,
   Trash2,
-  Calendar,
   AlertTriangle,
   ChevronLeft,
   ChevronRight,
   RefreshCw,
   HardDrive,
   Copy,
-  ExternalLink,
+  Cpu,
+  Shield,
+  Zap,
 } from "lucide-react";
 import { format, isPast, differenceInDays } from "date-fns";
 
@@ -113,7 +113,6 @@ function AssetsContent() {
 
   const handleExportCsv = async () => {
     try {
-      // Fetch all matching assets for export
       const params = new URLSearchParams();
       if (search) params.append("search", search);
       if (category !== "ALL") params.append("category", category);
@@ -143,13 +142,19 @@ function AssetsContent() {
     success("Copied", `${label} copied to clipboard.`);
   };
 
-  const getWarrantyBadge = (expiryDate: string | Date) => {
+  const getWarrantyBadge = (expiryDate: string | Date | null | undefined) => {
+    if (!expiryDate) {
+      return <span className="text-[11px] text-slate-500 italic">No warranty</span>;
+    }
     const d = new Date(expiryDate);
+    if (isNaN(d.getTime())) {
+      return <span className="text-[11px] text-slate-500 italic">--</span>;
+    }
     const now = new Date();
     if (isPast(d)) {
       return (
         <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-rose-400">
-          <AlertTriangle className="w-3 h-3" /> Expired ({format(d, "MMM dd, yyyy")})
+          <AlertTriangle className="w-3 h-3" /> Expired ({format(d, "MMM yyyy")})
         </span>
       );
     }
@@ -157,14 +162,14 @@ function AssetsContent() {
     if (daysLeft <= 30) {
       return (
         <span className="inline-flex items-center gap-1 text-[11px] font-bold text-rose-400 bg-rose-950/40 px-2 py-0.5 rounded border border-rose-500/30">
-          ⚠️ {daysLeft}d left ({format(d, "MMM dd, yyyy")})
+          ⚠️ {daysLeft}d left
         </span>
       );
     }
     if (daysLeft <= 90) {
       return (
         <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-amber-300 bg-amber-950/30 px-2 py-0.5 rounded border border-amber-500/30">
-          ⏳ {daysLeft}d left ({format(d, "MMM dd, yyyy")})
+          ⏳ {daysLeft}d left
         </span>
       );
     }
@@ -184,7 +189,7 @@ function AssetsContent() {
             Hardware Asset Inventory
           </h1>
           <p className="text-sm text-slate-400 mt-1">
-            Browse, allocate, repair, and audit enterprise hardware items across Hyderabad & Mumbai.
+            Master database catalog of hardware assets across Mumbai and Hyderabad offices.
           </p>
         </div>
 
@@ -221,7 +226,7 @@ function AssetsContent() {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
             <input
               type="text"
-              placeholder="Search tag, model, serial, employee..."
+              placeholder="Search User Name, Past User, Tag, SESA, CPU..."
               value={search}
               onChange={(e) => {
                 setSearch(e.target.value);
@@ -243,8 +248,10 @@ function AssetsContent() {
             >
               <option value="ALL">All Categories</option>
               <option value="Laptop">Laptops</option>
-              <option value="Desktop">Desktops</option>
               <option value="Monitor">Monitors</option>
+              <option value="Support Device">Support Devices</option>
+              <option value="TV">TVs</option>
+              <option value="Desktop">Desktops</option>
               <option value="Peripheral">Peripherals</option>
               <option value="Networking">Networking</option>
               <option value="Other">Other</option>
@@ -262,11 +269,12 @@ function AssetsContent() {
               className="w-full px-3 py-2 rounded-xl bg-slate-800 border border-slate-700 text-xs text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500"
             >
               <option value="ALL">All Statuses</option>
-              <option value="IN_STOCK">In Stock</option>
+              <option value="IN_STOCK">In Stock / Usable</option>
               <option value="IN_USE">In Use</option>
               <option value="UNDER_REPAIR">Under Repair</option>
-              <option value="LOST">Lost / Stolen</option>
-              <option value="SCRAPPED">Scrapped</option>
+              <option value="LOST">Lost</option>
+              <option value="SCRAPPED">Scrapped / Unusable</option>
+              <option value="RETURNED">Returned</option>
             </select>
           </div>
 
@@ -281,8 +289,8 @@ function AssetsContent() {
               className="w-full px-3 py-2 rounded-xl bg-slate-800 border border-slate-700 text-xs text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500"
             >
               <option value="ALL">All Offices</option>
-              <option value="HYD">Hyderabad (HYD)</option>
-              <option value="MUM">Mumbai (MUM)</option>
+              <option value="MUM">Mumbai</option>
+              <option value="HYD">Hyderabad</option>
             </select>
           </div>
 
@@ -334,13 +342,13 @@ function AssetsContent() {
           <table className="w-full text-left text-xs text-slate-300">
             <thead className="bg-slate-850 text-[11px] uppercase tracking-wider text-slate-400 border-b border-slate-800">
               <tr>
-                <th className="py-3 px-4 font-semibold">Asset Tag</th>
-                <th className="py-3 px-4 font-semibold">Hardware Specs</th>
+                <th className="py-3 px-4 font-semibold">Asset ID & SESA</th>
+                <th className="py-3 px-4 font-semibold">Hardware Specs & Model</th>
                 <th className="py-3 px-4 font-semibold">Category</th>
                 <th className="py-3 px-4 font-semibold">Status</th>
-                <th className="py-3 px-4 font-semibold">Assigned Employee</th>
+                <th className="py-3 px-4 font-semibold">Current Custodian</th>
                 <th className="py-3 px-4 font-semibold">Location</th>
-                <th className="py-3 px-4 font-semibold">Warranty Expiry</th>
+                <th className="py-3 px-4 font-semibold">Warranty</th>
                 <th className="py-3 px-4 font-semibold text-right">Actions</th>
               </tr>
             </thead>
@@ -349,7 +357,7 @@ function AssetsContent() {
                 <tr>
                   <td colSpan={8} className="py-12 text-center text-slate-400">
                     <RefreshCw className="w-6 h-6 animate-spin mx-auto text-emerald-400 mb-2" />
-                    Loading hardware assets...
+                    Loading hardware inventory...
                   </td>
                 </tr>
               ) : assets.length === 0 ? (
@@ -357,161 +365,203 @@ function AssetsContent() {
                   <td colSpan={8} className="py-12 text-center text-slate-400">
                     <HardDrive className="w-8 h-8 mx-auto text-slate-600 mb-2" />
                     <p className="font-semibold text-slate-300 text-sm">No hardware assets found</p>
-                    <p className="text-xs text-slate-500 mt-1">Try adjusting your filters or register a new asset.</p>
+                    <p className="text-xs text-slate-500 mt-1">Try adjusting your filters or import a CSV sheet.</p>
                   </td>
                 </tr>
               ) : (
-                assets.map((asset) => (
-                  <tr
-                    key={asset.id}
-                    className="hover:bg-slate-800/40 transition-colors group"
-                  >
-                    {/* Tag */}
-                    <td className="py-3 px-4 whitespace-nowrap">
-                      <div className="flex items-center gap-1.5">
-                        <Link
-                          href={`/assets/${asset.id}`}
-                          className="font-mono font-bold text-white hover:text-emerald-400 transition-colors"
-                        >
-                          {asset.assetTag}
-                        </Link>
-                        <button
-                          onClick={() => copyToClipboard(asset.assetTag, "Asset Tag")}
-                          title="Copy tag"
-                          className="opacity-0 group-hover:opacity-100 p-1 hover:text-white transition-opacity"
-                        >
-                          <Copy className="w-3 h-3 text-slate-400" />
-                        </button>
-                      </div>
-                    </td>
+                assets.map((asset) => {
+                  const specsChips = [
+                    asset.processor,
+                    asset.ram,
+                    asset.storage,
+                  ].filter(Boolean);
 
-                    {/* Hardware Name & Specs */}
-                    <td className="py-3 px-4">
-                      <div>
-                        <Link
-                          href={`/assets/${asset.id}`}
-                          className="font-semibold text-slate-100 hover:text-emerald-300 block"
-                        >
-                          {asset.name}
-                        </Link>
-                        <p className="text-[11px] text-slate-400">
-                          {asset.brand} {asset.model}
-                          {asset.serialNumber && ` • S/N: ${asset.serialNumber}`}
-                        </p>
-                      </div>
-                    </td>
+                  return (
+                    <tr
+                      key={asset.id}
+                      className="hover:bg-slate-800/40 transition-colors group"
+                    >
+                      {/* Asset Tag & SESA */}
+                      <td className="py-3 px-4 whitespace-nowrap">
+                        <div className="space-y-1">
+                          <div className="flex items-center gap-1.5">
+                            <Link
+                              href={`/assets/${asset.id}`}
+                              className="font-mono font-bold text-white hover:text-emerald-400 transition-colors"
+                            >
+                              {asset.assetTag}
+                            </Link>
+                            <button
+                              onClick={() => copyToClipboard(asset.assetTag, "Asset ID")}
+                              title="Copy ID"
+                              className="opacity-0 group-hover:opacity-100 p-0.5 hover:text-white transition-opacity"
+                            >
+                              <Copy className="w-3 h-3 text-slate-400" />
+                            </button>
+                          </div>
+                          {asset.sesaId && (
+                            <span className="inline-block text-[10px] font-mono font-semibold px-1.5 py-0.5 rounded bg-indigo-950/60 text-indigo-300 border border-indigo-500/30">
+                              {asset.sesaId}
+                            </span>
+                          )}
+                        </div>
+                      </td>
 
-                    {/* Category */}
-                    <td className="py-3 px-4 whitespace-nowrap">
-                      <CategoryBadge category={asset.category} size="sm" />
-                    </td>
+                      {/* Hardware Name & Specifications */}
+                      <td className="py-3 px-4 max-w-xs">
+                        <div className="space-y-1">
+                          <Link
+                            href={`/assets/${asset.id}`}
+                            className="font-semibold text-slate-100 hover:text-emerald-300 block truncate"
+                            title={asset.name}
+                          >
+                            {asset.brand} {asset.model}
+                          </Link>
+                          {specsChips.length > 0 && (
+                            <div className="flex items-center gap-1 flex-wrap">
+                              {specsChips.map((chip, idx) => (
+                                <span
+                                  key={idx}
+                                  className="inline-flex items-center text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700"
+                                >
+                                  {chip}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                          {asset.serialNumber && (
+                            <p className="text-[10px] font-mono text-slate-500 truncate">
+                              S/N: {asset.serialNumber}
+                            </p>
+                          )}
+                        </div>
+                      </td>
 
-                    {/* Status */}
-                    <td className="py-3 px-4 whitespace-nowrap">
-                      <StatusBadge status={asset.status} size="sm" />
-                    </td>
+                      {/* Category */}
+                      <td className="py-3 px-4 whitespace-nowrap">
+                        <CategoryBadge category={asset.category} size="sm" />
+                      </td>
 
-                    {/* Assigned Employee (RESOLVED TO NAME INSTEAD OF RAW UUID) */}
-                    <td className="py-3 px-4 whitespace-nowrap">
-                      {asset.employee ? (
-                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-800/80 border border-slate-700 text-xs font-semibold text-blue-300">
-                          <span>{asset.employee.name}</span>
-                          <span className="text-[10px] text-slate-400">({asset.employee.department})</span>
-                        </span>
-                      ) : (
-                        <span className="text-slate-500 italic text-[11px]">Unassigned (In Inventory)</span>
-                      )}
-                    </td>
+                      {/* Status */}
+                      <td className="py-3 px-4 whitespace-nowrap">
+                        <StatusBadge status={asset.stateDetail || asset.status} size="sm" />
+                      </td>
 
-                    {/* Location */}
-                    <td className="py-3 px-4 whitespace-nowrap">
-                      <LocationBadge location={asset.officeLocation} size="sm" />
-                    </td>
+                      {/* Assigned Employee / Custodian & Past Users */}
+                      <td className="py-3 px-4 max-w-[200px]">
+                        <div className="space-y-1">
+                          {asset.employee ? (
+                            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg bg-blue-950/60 border border-blue-500/30 text-xs font-semibold text-blue-300">
+                              <span>{asset.employee.name}</span>
+                            </span>
+                          ) : asset.currentUser && asset.currentUser !== "In Stock" && asset.currentUser !== "NONE" && asset.currentUser !== "-" && asset.currentUser !== "?" ? (
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-850 border border-slate-700 text-xs text-slate-200 truncate block font-medium" title={asset.currentUser}>
+                              {asset.currentUser.split("\n")[0]}
+                            </span>
+                          ) : (
+                            <span className="text-slate-500 italic text-[11px] block">In Stock</span>
+                          )}
 
-                    {/* Warranty */}
-                    <td className="py-3 px-4 whitespace-nowrap">
-                      {getWarrantyBadge(asset.warrantyExpiry)}
-                    </td>
+                          {/* Past User summary chip if present */}
+                          {asset.lastUser && !["NA", "NONE", "-", "?", ""].includes(asset.lastUser.trim().toUpperCase()) && (
+                            <div className="flex items-center gap-1 text-[10px] text-slate-400 truncate" title={`Past: ${asset.lastUser.replace(/\n/g, ", ")}`}>
+                              <span className="text-slate-500">Past:</span>
+                              <span className="text-slate-300 truncate">{asset.lastUser.split("\n")[0].split(",")[0].trim()}</span>
+                            </div>
+                          )}
+                        </div>
+                      </td>
 
-                    {/* Actions Menu */}
-                    <td className="py-3 px-4 text-right whitespace-nowrap">
-                      <div className="flex items-center justify-end gap-1">
-                        <Link
-                          href={`/assets/${asset.id}`}
-                          title="View Details"
-                          className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
-                        >
-                          <Eye className="w-4 h-4" />
-                        </Link>
+                      {/* Location */}
+                      <td className="py-3 px-4 whitespace-nowrap">
+                        <LocationBadge location={asset.officeLocation} size="sm" />
+                      </td>
 
-                        {/* Quick Assign / Return Button */}
-                        {asset.status === "IN_STOCK" ? (
+                      {/* Warranty */}
+                      <td className="py-3 px-4 whitespace-nowrap">
+                        {getWarrantyBadge(asset.warrantyEndDate || asset.warrantyExpiry)}
+                      </td>
+
+                      {/* Actions Menu */}
+                      <td className="py-3 px-4 text-right whitespace-nowrap">
+                        <div className="flex items-center justify-end gap-1">
+                          <Link
+                            href={`/assets/${asset.id}`}
+                            title="View Details"
+                            className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
+                          >
+                            <Eye className="w-4 h-4" />
+                          </Link>
+
+                          {/* Quick Assign / Return Button */}
+                          {asset.status === "IN_STOCK" ? (
+                            <button
+                              onClick={() => {
+                                setAssetToAssign(asset);
+                                setIsAssignModalOpen(true);
+                              }}
+                              title="Assign to Staff"
+                              className="p-1.5 rounded-lg text-blue-400 hover:text-blue-300 hover:bg-blue-950/40 transition-colors"
+                            >
+                              <UserCheck className="w-4 h-4" />
+                            </button>
+                          ) : asset.status === "IN_USE" ? (
+                            <button
+                              onClick={() => {
+                                setAssetToReturn(asset);
+                                setIsReturnModalOpen(true);
+                              }}
+                              title="Return to Stock"
+                              className="p-1.5 rounded-lg text-emerald-400 hover:text-emerald-300 hover:bg-emerald-950/40 transition-colors"
+                            >
+                              <RotateCcw className="w-4 h-4" />
+                            </button>
+                          ) : null}
+
+                          {/* Log Repair */}
+                          {asset.status !== "SCRAPPED" && asset.status !== "LOST" && (
+                            <button
+                              onClick={() => {
+                                setAssetToRepair(asset);
+                                setIsMaintenanceModalOpen(true);
+                              }}
+                              title="Log Repair / Maintenance"
+                              className="p-1.5 rounded-lg text-amber-400 hover:text-amber-300 hover:bg-amber-950/40 transition-colors"
+                            >
+                              <Wrench className="w-4 h-4" />
+                            </button>
+                          )}
+
+                          {/* Edit */}
                           <button
                             onClick={() => {
-                              setAssetToAssign(asset);
-                              setIsAssignModalOpen(true);
+                              setAssetToEdit(asset);
+                              setIsFormModalOpen(true);
                             }}
-                            title="Assign to Employee"
-                            className="p-1.5 rounded-lg text-blue-400 hover:text-blue-300 hover:bg-blue-950/40 transition-colors"
+                            title="Edit Asset"
+                            className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
                           >
-                            <UserCheck className="w-4 h-4" />
+                            <Edit2 className="w-4 h-4" />
                           </button>
-                        ) : asset.status === "IN_USE" ? (
-                          <button
-                            onClick={() => {
-                              setAssetToReturn(asset);
-                              setIsReturnModalOpen(true);
-                            }}
-                            title="Return to Stock"
-                            className="p-1.5 rounded-lg text-emerald-400 hover:text-emerald-300 hover:bg-emerald-950/40 transition-colors"
-                          >
-                            <RotateCcw className="w-4 h-4" />
-                          </button>
-                        ) : null}
 
-                        {/* Log Repair */}
-                        {asset.status !== "SCRAPPED" && asset.status !== "LOST" && (
-                          <button
-                            onClick={() => {
-                              setAssetToRepair(asset);
-                              setIsMaintenanceModalOpen(true);
-                            }}
-                            title="Log Repair / Maintenance"
-                            className="p-1.5 rounded-lg text-amber-400 hover:text-amber-300 hover:bg-amber-950/40 transition-colors"
-                          >
-                            <Wrench className="w-4 h-4" />
-                          </button>
-                        )}
-
-                        {/* Edit */}
-                        <button
-                          onClick={() => {
-                            setAssetToEdit(asset);
-                            setIsFormModalOpen(true);
-                          }}
-                          title="Edit Asset"
-                          className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
-                        >
-                          <Edit2 className="w-4 h-4" />
-                        </button>
-
-                        {/* Scrap / Dispose */}
-                        {asset.status !== "SCRAPPED" && asset.status !== "LOST" && (
-                          <button
-                            onClick={() => {
-                              setAssetToDispose(asset);
-                              setIsDisposeModalOpen(true);
-                            }}
-                            title="Dispose / Scrap Asset"
-                            className="p-1.5 rounded-lg text-rose-400 hover:text-rose-300 hover:bg-rose-950/40 transition-colors"
-                          >
-                            <Trash2 className="w-4 h-4" />
-                          </button>
-                        )}
-                      </div>
-                    </td>
-                  </tr>
-                ))
+                          {/* Scrap / Dispose */}
+                          {asset.status !== "SCRAPPED" && asset.status !== "LOST" && (
+                            <button
+                              onClick={() => {
+                                setAssetToDispose(asset);
+                                setIsDisposeModalOpen(true);
+                              }}
+                              title="Scrap / Decommission Asset"
+                              className="p-1.5 rounded-lg text-rose-400 hover:text-rose-300 hover:bg-rose-950/40 transition-colors"
+                            >
+                              <Trash2 className="w-4 h-4" />
+                            </button>
+                          )}
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })
               )}
             </tbody>
           </table>

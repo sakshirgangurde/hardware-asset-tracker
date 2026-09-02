@@ -1,0 +1,1005 @@
+SR,Asset ID,Current User,Last User,Serial Number/ Service Tag,Invoice link,SESA ID,STATE,Location,Type,Processor ,RAM,SSD/HDD,Configuration of Laptop,Inspection Done?,Lenovo,Model#,Date of purchase,Warrenty Start date ,Warrenty End Date,Extend Date of warrenty,Extend Upto,,Service History,Final Summary,Audit Date ,Antivirous ,Charger,
+1,WB-74,Anirudha Choudhari,NA,PF16MZ17,,NA,In Use,Mumbai,Laptop,i7 8th Gen,16 GB,1 TB SSD,"i7;8th Gen;16GB RAM;64 Bit OS;1TB SSD;:14""FHD Display",NO,Lenovo,,NA,1 December 18,1 Dec 21,1 Dec 21,,,,Laptop is in good condition,NA,NO,Yes,
+2,<TODO>,Kaustubh Mhatre,NA,C02YQ4GALVDG,NA,NA,In Use,Mumbai,Laptop,,,,"2.4 GHz Intel Core i5, 
+8 GB 2133 MHz LPDDR3, 
+Intel Iris Plus Graphics 655 1536 MB",NO,Apple,,1 Oct 19,,,Out Of Warrenty,,,,,NA,Yes,Yes,
+3,INHYDIS01442L,NONE,Sanket Gurav,CND5020GV9,NA,NA,Returned,Mumbai,Laptop,,,,"8 GB Ram, Processor :i74600M, 64bit operationg system, x64 based processor",NO,HP,,,,,,,,,,,,,
+4,LVS083515,Schneider,Shubham Yadav,PC0T445Y,,,Returned,Mumbai,Laptop,,,,"Processor : Intel Core i5 - 7300U CPU @ 2.6 GHz, Ram- 8GB",NO,Lenovo,,,,,,,,,,,,,
+5,WB-02,In Office,?,5H3Q8R1,-,,Scrapped,Mumbai,Laptop,,,,"i5 2.4Ghz
+4GB RAM
+500GB HDDi5 2.4Ghz
+4GB RAM
+500GB HDD",NO,Dell,,20 Nov 11,,,,,,,,,,,
+6,WB-04,Kaustubh Mhatre,"Abhishal Yadav, 
+Ninad Bhubad, Suhas Gadhave",priyan,,,Scrapped,Mumbai,Laptop,,,,"♦i5 2.5Ghz
+♦4GB RAM
+♦500GB HDD 
+♦4GB RAM
+♦500GB SSD",NO,Dell,,9/10/2012,,,,,,,,,,,
+7,WB-33,In Office,,H6MTFY1,,,Scrapped,Mumbai,Laptop,,,,8 GB,NO,Dell,,17 Oct 13,,,,,,,,,,,
+8,WB-34,In Office ,"Abhishal Yadav
+Ameya Mhatre
+Shrikrishna Salvi
+Abhishek Padlekar, 
+Shubham Upadhyay",40MTFY1,,,Scrapped,Mumbai,Laptop,,,,"8GB
+Pending",NO,Dell,,,,,,,,,,,,,
+9,WB-37,In Office ,"Sharad Aambre
+Trupti Nagekar",,,,Scrapped,,Laptop,,,,"2 GB Ram, Intel(R) Pentium(R) CPU B960 @ 2.20GHz, 2200 MHz",NO,Lenovo,,16/Sep/03,,,,,,,,,,,
+10,WB-43,In Office,"Nishant Dere
+Pranali Ghag
+Vivek Patil
+Trupti Nagekar
+Sandesh Salunke",HT8K91SCA00463E,,,Scrapped,Mumbai,Laptop,,,,"12 GB Ram, Processor : Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz, 2501 Mhz, 2 Core(s)
+",NO,Samsung,,3/30/2013,,,,,,,,,,,
+11,WB-53,In Office,-,CND4327DC0,,,Scrapped,Mumbai,Laptop,,,,4 GB,NO,HP,,17 Sep 14,,,,,,,,,,,
+12,WB-56,In Office,"Sagar Gauda,
+Suhas Gadhave,
+Ashish Nemade",CND424BJ4R,,,Scrapped,Mumbai,Laptop,,,,"♦12 GB Ram
+♦i5-4210U CPU @ 1.70 GHz* 4,
+♦ 1TB SSD",NO,HP,,7th Oct 2014,,,,,,,,,,,
+13,WB-59,In Office,,CND4362YZQ,,,Scrapped,Mumbai,Laptop,,,,"4 GB- 64 bit operating system, x64 based processor 8GB",NO,Compaq,,11 Dec 14,,,,,,,,,,,
+14,WB-62,In Office ,"Rakesh Pedhamkar
+Mahendra Sonawane","IS 13252(Part 1):2010 , R-41001813
+CND5091L4J",,,Scrapped,Mumbai,Laptop,,,,"Processor : Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz 2.40 GHz, 16gb ram,64bit operationg system, x64 based processor",NO,HP,,1/23/2015,,,,,,,,,,,
+15,WB-65,In Office,Ashish Nemade,CND44833XX,,,Scrapped,Mumbai,Laptop,,,,"i5-2.20GHz ,8GB RAM, 1TB HDD",NO,HP,,23/Mar/15,,,,,,,,,,,
+16,WB-66,In Office,"Shahid Khan
+Pradnya Pevekar
+Ravindra Ranmale
+Milind K",CND5091L4T,,,Lost,Mumbai,Laptop,i5 ,,,"i5-8GB RAM,1TB Hard disk,  Processor : i5-5200U CPU @ 2.20GHz",NO,HP,,5th Apr 2015,,,,,,,,,,,
+17,WB-69,in office,"Bhavik Rupa
+Rohan Vichare
+Ashwini Biradar,
+Bhavik Rupa",DYC8432,,,Scrapped,Mumbai,Laptop,,,," Seems SSD 
+Did not find any HDD 
+RAM- ",NO,Dell,,16-Nov-14,,,,,,,,,,,
+18,WB-70,In Office,"Yash Rathore
+Chandrashekhar Birajdar
+Amit Teli
+Amarjeet,Akanksha Naruka","        CYP6682, 
+30015/ZIC56-15104973/0025",,,Scrapped,Mumbai,Laptop,,,,Ram :8 GB,NO,Dell,,20/04/2016,,,,,,,,,,,
+19,WB-72,In office,"Shahid Khan
+Abhishal Yadav
+Rakesh Pedhamkar
+Sarvesh","9G9NWN2, 
+45173/SDPPI/2016",,,Scrapped,Mumbai,Laptop,,,,"15'6 Screen, i5-8250U CPU@1.60ghZ,16GB RAM",NO,Dell,,29 Aug 18,,,,,,,,,,,
+20,WB-73,In office,"Sagar Mahajan
+Bipin Mishra
+Yash Rathore
+Shahid Khan
+Abhishek Padlekar","7K46WN2, 
+45173/SDPPI/2016",,,Scrapped,Mumbai,Laptop,,,,"15'6 Screen;8th Generation;
+i5-16GB RAM;
+1TB SSD;2GB Graphics Card; 1 TB HDD",NO,Dell,,28 Sep 18,,,,,,,,,,,
+21,WB-75,In Stock,"Akshay Bura
+Vishwajeet Behara",21T69S2,6 Mar 19,NA,Usable-NonSESA,Mumbai,Laptop,i7 8th Gen,24 GB,512 GB/ 1TB HDD,"Core i7 8th GRN/ 32 GB Ram, 1TB HDD, 500 SSD M.2, GTX 1060 MAX-Q Design 6GB GRP WIN 10 pro, Processor- I7-8750H",Yes,Dell,,6 Mar 19,6 Mar 19,6 Mar 22,6 Mar 22,,,,,April,NA,,
+22,WB-76,-,"Amey Mhatre
+New Machine","FKRT1P2, 45173/SDPPI/2016",,,Scrapped,Mumbai,Laptop,,,,"♦15'6 Screen
+♦8th Generation
+♦i5-16GB RAM
+♦1TB SSD,
+♦2GB AMD",NO,Dell,,20-Mar-19,,,,,,,,,,,
+23,WB-77,In Office,"Rishab Singh
+Vinay Patil- (for3 days)
+Shrikrishna Salvi
+New Machine","45173/SDPPI/2016,  9HRT1P2",,,Unusable,Mumbai,Laptop,,,,"15'6 Screen, 8th Generation, i5-16GB RAM,, 2GB AMD",NO,Dell,,20-Mar-19,,,,,,,,,,,
+24,WB-78,In Office,"Tauseef Shaikh-Temp
+Sunny Singh
+Ninad Bhuvad","9BTT1P2, 45173/SDPPI/2016",,,Scrapped,Mumbai,Laptop,,,,"♦15'6 Screen,
+♦8th Generation,
+♦i5-16GB RAM,
+♦1TB SSD, 
+♦2GB AMD",NO,Dell,,20-Mar-19,,,,,,,,,,,
+25,WB-79,In Office,"Radhakrishna Iyer
+New Machine","45173/SDPPI/2016, J0VJ1P2",,,Scrapped,Mumbai,Laptop,,,,"15'6 Screen, 8th Generation, i5-16GB RAM,1TB SSD, 2GB AMD",NO,Dell,,20-Mar-19,,,,,,,,,,,
+26,WB-80,In Office,"Rumit Pathre
+Sunny Creado
+Dhananjay Patil
+Sanket Mangodia
+Ganesh Basayal
+Abhishek Padlekar
+New Machine","45173/SDPPI/2016, JHRT1P2",,,Scrapped,Mumbai,Laptop,,,,"15'6 Screen, 8th Generation, i5-16GB RAM,1TB SSD, 2GB AMD",NO,Dell,,20-Mar-19,,,,,,,,,,,
+27,WB-81,IN Stock (MUM),"Omkar Babrekar
+Amey Mhatre
+Anita Raorane (tentative)
+Shrikrishna Salvi
+Sandesh Salunkhe
+New Machine",9WF7DX2,,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,32 GB,1 TB SSD,"15'6 Screen, 8th Generation, i5-16GB 32GB RAM,1TB SSD, 2GB AMD, Processor: intel(R) core (TM) i5-8265U CPU @ 1.60GHz",Yes,Dell,,20-Jul-19,20-Jul-19,8-Jul-24,8-Jul-24,,,NA,NA,NA,NA,Yes,
+28,WB-82,Hiring Team ,"Durgesh Yaduvanshi
+Mahendra Sonwane
+New Machine",1WF7DX2,,NA,In Use,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,"15'6 Screen, 8th Generation, i5-16GB RAM,1TB SSD, 2GB AMD
+2400 MHz",Yes,Dell,,20-Jul-19,20-Jul-19,8-Jul-24,8-Jul-24,,,NA,NA,NA,NA,,
+29,WB-83,Kaustubh Mhatre,"Kaustubh Mhatre
+Akash Ete
+Shubham Salvi
+Trupti Nagekar,
+Omkar Tamhane",MP1EYLCY,,NA,Unusable,Mumbai,Laptop,i3 7th Gen,12 GB,256 SSD,"i3, 7th Generation RAM 12 GB, 1 TB HDD @ 5400 RPM with + 240NVME/SSD, 14"" FHD
+2133 MHz 256 SSD",NO,Lenovo,,19-Oct-19,1 July 18,1-Jul-21,1-Jul-21,,,On April 15th have submitted by KM to check then discovered the motherboard Issue,,,,Yes,
+30,WB-84,HR Team /Tejaswi Mane,"Deepali Motwani
+Ahmad Ali Khan
+Bhavik Rupa
+New Machine",91Y46Z2,,NA,In Use,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,"15'6 Screen, 8th Generation, i5-16GB RAM,1TB SSD, 2GB AMD",Yes,Dell,,19-Oct-19,19-Oct-19,8-Jul-24,8-Jul-24,,,NA,NA,April,NA,,
+31,WB-85,IN Stock (MUM),"Prakash Sewani
+Anita Raorane (tentative)
+Sarvesh Sawant
+New Machine",2NG9JZ2,,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,"15'6 Screen, 8th Generation, i5-16GB RAM,1TB SSD, 2GB AMD",Yes,Dell,,19-Oct-19,19-Oct-19,7-Oct-20,7-Oct-20,,,NA,NA,April,NA,,
+32,WB-86,IN Stock (MUM),"Vishal Kanawade
+Tauseef Shaikh-Temp
+Raginee Iyer
+Amarjeet Prajapati",7NG9JZ2,,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,"15'6 Screen, 8th Generation, i5-16GB RAM,1TB SSD, 2GB AMD, Processor: i58265u 1.6 GHz * 8",Yes,Dell,,19-Oct-19,19-Oct-19,8-Jul-24,8-Jul-24,,,NA,NA,April,NA,Yes,
+33,WB-87,IN Stock (MUM),"Akshay Pandey
+New Machine",JRKV5Z2,,NA,Unusable,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,"RAM- 16 GB;2400MHz
+SSD-1TB
+AMD - 2GB",Yes,Dell,,19-Oct-19,19-Oct-19,7-Oct-20,7-Oct-20,,,NA,NA,April,NA,,
+34,WB-89,IN Stock (MUM),"Mayur Patil
+Sagar Gauda",3LQ70Y2,,NA,Under Repair,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,"15'6 Screen, 8th Generation, i5-16GB RAM,1TB SSD, 2GB AMD",Yes,Dell,,14 Dec 19,14 Dec 19,16 SEPT 2020,16 SEPT 2020,,,NA,NA,April,NA,,
+35,WB-90,IN Stock (MUM),"Avinash Patil
+Vikas Srivastava-Temp
+Anita Raorane 
+Vinay Patil
+Sanket Gurav",9NHB0Y2,,NA,Under Repair,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,"i5;8th gen;16GB RAM;1TB NVME;
+2GB AMD",Yes,Dell,,14 Dec 19,14 Dec 19,8 Jul 24,8 Jul 24,,,NA,NA,April,NA,,
+36,WB-91,IN Stock (MUM),Shubham Upadhyay, 6VK10Y2,,NA,Unusable,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD + 256 GB SSD,"i5;8th gen;16 GB RAM;1TB HDD;
+2GB AMD",Yes,Dell,,14 Dec 19,14 Dec 19,16 SEPT 2020,16 SEPT 2020,,,NA,NA,April,NA,,
+37,WB-92,IN Stock (MUM),"Vijay Borge
+Bipin Mishra
+Pradeep Gupta",1FM40Y2 ,,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,"i5/15'6 screen;16GB RAM/2400 MHz/8th Gen,1 TB SSD",Yes,Dell,,14 Dec 19,14 Dec 19,Expires 08 JUL 2024,8 Jul 24,,,NA,NA,April,NA,,
+38,WB-93,IN Stock (MUM),"Suraj Rane
+Mahesh Labhe",1S36803,,NA,Usable,Mumbai,Laptop,i5 8th Gen,24 GB,1 TB SSD + 1 TB HDD ,"i5/15'6 screen,16 GB RAM/2400 MHz/8th Gen,1 TB SSD/1 TB HDD",Yes,Dell,,03 Jan 20,03 Jan 20,30 Oct 20,30 Oct 20,,,NA,NA,April,NA,,
+39,WB-94,Hiring team ,"Anurag Bagul
+Srinu Gatla
+Bikshapathi Devatha
+Satip Padhy
+Sumit Patel
+Santkumar Vishawakarma",3WM6803,,NA,In Use,Mumbai,Laptop,i5 8th Gen,16 GB,1TB HDD + 480 GB SSD,"i5/15'6 screen,16 GB RAM/2400 MHz/10th Gen,1 TB SSD/1 TB HDD",Yes,Dell,,03 Jan 20,03 Jan 20,08 Jul 24,08 Jul 24,,,NA,NA,April,NA,Yes,
+40,WB-95,IN Stock (MUM),"Balsharan Kandola
+Ved Thakur
+Vijayalakshmi Nadar
+Vinay Patil
+Vishal Sutar
+New Machine",4THB0Y2,,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,"i5/15'6 screen,16 GB RAM/2400 MHz/8th Gen/1TB SSD",Yes,Dell,,27 Jan 20,27 Jan 20,29 SEPT 2023,29 SEPT 2023,,,NA,NA,April,NA,,
+41,WB-96,-,Gaurang Kelkar,3NHB0YZ / 3NHBOY2,,,Lost,Mumbai,Laptop,,,,1TB SSD/8GB,NO,Dell,,27 Jan 20,,,,,,,,,,,
+42,WB-97,IN Stock (MUM),"Bipin Mishra
+Vinod Patil
+In Office
+Pratap Solanki
+Abhishal Yadav
+New Machine",4P4PDX2,11 March 20,NA,Unusable,Mumbai,Laptop,i5 8th Gen,32 GB,1 TB SSD,"i5/15'6 screen,32 GB RAM/2400 MHz/8th Gen,1 TB SSD/1 TB HDD
+2 GB GPU",Yes,Dell,,11 March 20,,8 Jul 24,8 Jul 24,,,NA,NA,April,NA,,
+43,WB-98,IN Stock (MUM),"Edge team
+Abhishek Shinde
+Akanksha Naruka
+Ashish Nemade
+",GXRNDX2,,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,i5/15'6 screen16 GB RAM - 2400 MHz ; 1 TB HDD/1 TB SSD,Yes,Dell,,11 March 20,11 March 20,11 December 20,11 December 20,,,NA,NA,April,NA,,
+44,WB-99,IN Stock (MUM),"Elton D'souza
+Tejaswini Kadam
+New Machine",MP1PJCYX,,,Usable,Mumbai,Laptop,i3 7th Gen,12 GB,1 TB HDD,"12 GB RAM - 2133 MHz ; 256 GB SSD; 1 TB HDD
+480GB SSD",NO,Lenovo,,11 March 20,,,1 December 2020,,,,,,,,
+45,WB-100,IN Stock (MUM),"Rachana Bhat
+Elton D'souza
+Rohan Vichare
+Nitesh Sawant
+Karishma Deka",MP1MV5CT,,NA,Usable,Mumbai,Laptop,i3 7th Gen,4 GB,512 GB SSD,"♦ 1x 4GB DDR4 2133 - Memory
+♦ Graphics -1x Intel HD 620
+♦ 1x 1TB 5400 -Hard Disk
+♦ 1x Intel Core i3-7020U  - Processor
+♦Installed 516 GB SSD",NO,Lenovo,,11 March 20,,,1 October 2020,,,,,,,,
+46,WB-101,IN Stock (MUM),"Bipin Mishra (edge team)
+Vinay Panchal
+Hardik Turakhia
+",64666Z2,,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD + 1 TB HDD ,i5/15'6 screen;32 GB RAM - 3200 MHz; 1 TB SSD;,Yes,Dell,,20 March 20,NA,NA,8 July 24,,,,,April,,,
+47,WB-102,IN Stock (MUM),"Varad Dhumale
+Priyanka Todekar
+Pratik Poojary
+Padam Kumar Agrawal
+Gopalsingh Rajpurohit","3PP10Y2
+ ",,NA,Unusable,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,i5/15'6 screen:RAM-16 GB;2400 MHz;1 TB SSD,Yes,Dell,,20 March 20,20 March 20,13 November 23,13 November 23,,,NA,SSD/Hdd dead,April,NA,12 for damage laptop,
+48,WB-103,IN Stock (MUM),"Sakshi Gangurde
+Animish Pande
+Yash Rathore
+Hussain Rizvi",3JVD1W2,,NA,Unusable,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,"i5, 8th Generation, 16gb Ram, 1TB  NVME @ 5400 RPM, 2gb AMD Graphics",Yes,Dell,,2 June 20,2 June 20,20 June 21,20 June 21,,,NA,Battery NA and the system too slow,April,NA,,
+49,WB-104,IN Stock (MUM),"Siddhesh Wayal
+Karthik Balakrishna
+Bhagyashree Gaikwad
+Vishal Sutar
+Roshan Kather
+Chetna 
+Viraj Joshi
+Shyam Rochlani",DTKC1W2,,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD,"i5, 8th Generation, 16gb Ram, 1TB HDD @ 5400 RPM, 2gb AMD Graphics
+Replaced - 1TB SSD",Yes,Dell,,2 June 20,NA,NA,8 July 24,,,,,April,NA,,
+50,WB-105,IN Stock (MUM),"Vighnesh Manjrekar
+Akash Ghagre
+Sandesh Kamble
+Swathi Krishnan
+Mohit Makkhija
+Rohan Vichare
+Ashish Nemade
+",4R161W2,,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,"i5, 8th Generation, 16gb Ram, 1TB HDD @ 5400 RPM, 2gb AMD Graphics ; 1 TB SSD",Yes,Dell,,2 June 20,,8 July 24,8 July 24,,,NA,NA,April,NA,,
+51,WB-106,IN Stock (MUM),"Shivam Parab
+Shanawaz Khan
+Vijay Borge
+Suhail Shaikh",7DCJ1W2,,NA,Usable,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD,"i5, 8th Generation, 16gb Ram, 1TB HDD -replaced with 1 TB SSD @ 5400 RPM, 2gb AMD Graphics",Yes,Dell,,2 June 20,,20 Jun 2021,20 Jun 2021,,,Na,NA,,,,
+52,WB-107,IN Stock (MUM),"Yash Rathore
+Chandrashekhar Birajdar
+Yash Rathore",18MH1W2,,NA,Unusable,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD,"i5, 8th Generation, 16gb Ram, 1TB SSD @ 5400 RPM, 2gb AMD Graphics",Yes,Dell,,2 June 20,2 June 20,20 June 21,20 June 21,,,Na,NA,,,,
+53,WB-108,IN Stock (MUM),"Amit Lokhande
+Gaurang Kelkar
+Nikhil Lad
+Vinay Patil
+Pranay Koluguri
+Atharva Bowlekar",DV5S0Y2,,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD,"i5, 8th Generation, 16gb Ram, 1TB HDD @ 5400 RPM, 2gb AMD Graphics
+1 TB SSD",NO,Dell,,10 July 20,NA,29 SEPT 2022,29 SEPT 2022,,,,,,,,
+54,WB-109,IN Stock (MUM),"Edge Team -Ubantu 
+Shubham Shirke
+Anurag Patel
+Rakesh Pedhamkar (1 week)
+Shashank Parmar",CH8C0Y2,,NA,Usable,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD,"i5, 8th Generation, 16gb Ram, 1TB HDD @ 5400 RPM, 2gb AMD Graphics",Yes,Dell,,10 July 20,NA,29 September 22,29 September 22,,,NA,NA,April,NA,,
+55,WB-110,Sakshi Gangurde	,"Anzar Ahmed
+Rohit wahwal
+Shubham Yogi
+Dhruv Khara
+Abhishek Shinde
+New Machine",H06S0Y2,,NA,In Use,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD + 1 TB HDD ,"i5, 8th Generation, 16gb Ram - 2400 MHz, 1TB HDD/1 TB SSD @ 5400 RPM, 2gb AMD Graphics",Yes,Dell,,10 July 20,NA,29 September 22,Out Of Warrenty,,,NA,NA,April,NA,,
+56,WB-111,IN Stock (MUM),"Shivam Singh
+Pratap Solanki
+Pranit Naik
+Roshan Soni",9Y2M0Y2,,NA,Usable,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD,"i5, 8th Generation, 16gb Ram-2400 MHz, 1TB HDD/1 TB NVME @ 5400 RPM, 2gb AMD Graphics
+ replaced - 1TB NVME",Yes,Dell,,10 July 20,10 July 20,29 SEPT 2024,29 SEPT 2024,,,NA,NA,April,NA,,
+57,WB-112,IN Stock (MUM),"Satishchandra Boora
+Amey Saitavdekar
+Anzar Ansari
+Bhavesh Gaba
+Akash Ete
+Padam Kumar Agrawal,
+Pranit Naik",11360Y2,,NA,Usable,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD + 1 TB HDD ,"i5, 8th Generation, 16gb Ram, 1TB NVME @ 5400 RPM, 2gb AMD Graphics",Yes,Dell,,10 July 20,10 July 20,29 SEPT 2024,29 SEPT 2024,,,NA,NA,April,NA,,
+58,WB-113,IN Stock (MUM),"Sandeep Shinde(Digital Marketing)
+Faizan Ansari
+Shahid Khan
+Shariq Ansari","NHQ5HSI0089250D40B3400
+",,NA,Usable-SESA,Mumbai,Laptop,i7 9th Gen,32 GB,1 TB SSD,"Intel Core i7 9750H 9th Gen, 8GB DDR4 RAM, 1TB SSD
+15.6 FHD, Nvidia GeForce GTX 1660Ti 6GB VRAM Graphics
+",Yes,Acer,,31 July 20,17/06/2020,16/07/2021,16/07/2021,,,NA,NA,April,NA,,
+59,WB-114,IN Stock (MUM),"Sagar Mahajan
+Vishal Kanawade
+Sunny Creado
+Ganesh Lokhande
+Pratik Mhaske
+Rajveer Barad",8RV4Z43,,NA,Usable,Mumbai,Laptop,i5 10th Gen,16 GB,1 TB HDD,"10th Gen i5-10210U Processor
+16GB RAM 256GB SSD+1TB HDD
+2GB GRAPHICS
+",Yes,Dell,,05 Aug 20,05 Aug 20,05 Aug 23,05 Aug 23,,,NA,NA,April,NA,,
+60,WB-115,IN Stock (MUM),"Madhuri Gawade
+Rohit Wahwal
+Hussain Rizvi
+New Machine",49ZK743,,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,16 GB,1TB HDD + 480 GB SSD,"i5, 10th Generation, 16GB Ram, 1 TB NVME, 1TB HDD @ 5400 RPM, without Graphics",Yes,Dell,,03 Aug 20,03 Aug 20,16 Jul 21,16 Jul 21,,,NA,NA,April,NA,,
+61,WB-116,IN Stock (MUM),"Suhas Chougule
+Sanket Gurav
+Rohan Vichare",57YK743,,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,16 GB,1 TB SSD/1 TB HDD,"i5, 10th Generation, 16GB Ram, 1 TB SSD, 1TB HDD @ 5400 RPM, without Graphics",Yes,Dell,,03 Aug 20,03 Aug 20,29 SEPT 2024,29 SEPT 2024,,,NA,NA,April,NA,Yes,
+62,WB-117,IN Stock (MUM),"Shashank Parmar
+New Machine",67ZK743,,NA,Under Repair,Mumbai,Laptop,i5 10th Gen,16 GB,1 TB SSD/1 TB HDD,"i5, 10th Generation, 16GB Ram - 2667 MHz, 1 TB SSD, 1TB HDD @ 5400 RPM, without Graphics",Yes,Dell,,03 Aug 20,03 Aug 20,29 SEPT 2024,29 SEPT 2024,,,NA,NA,April,NA,,
+63,WB-118,IN Stock (MUM),"Sonia Verma
+Pratiksha P Shinde
+Dhananjay Patil
+Vijayalaxmi Nadar
+Sumit Patel
+New Machine",79ZK743,,NA,Usable,Mumbai,Laptop,i5 10th Gen,16 GB,1 TB SSD,"i5, 10th Generation, 16GB Ram, 1 TB SSD, 1TB HDD @ 5400 RPM, without Graphics
+3200 MHz",Yes,Dell,,03 Aug 20,03 Aug 20,29 SEPT 2024,29 SEPT 2024,,,NA,NA,April,NA,Yes,
+64,WB-119,IN Stock (MUM),"Anzar Ahmed
+Sagar Mahajan
+Vikas Srivastava
+Hussain Rizvi
+Rakesh Singh 
+Anup Vishwakarma",37ZK743,,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,16 GB,1 TB HDD + 256 GB SSD,"i5, 10th Generation, 16GB Ram, 1 TB SSD, 1TB HDD @ 5400 RPM, without Graphics",Yes,Dell,,03 Aug 20,03 Aug 20,29 SEPT 2024,29 SEPT 2024,,,NA,NA,April,NA,,
+65,WB-120,In Stock (MUM),"Yash Khandagale
+Akshay Chandarkar
+Shailesh Salunkhe
+Sailen Meher
+Abinas Mishra
+Preeti Pawar
+Akshay Bura
+Sneha Mool
+Rumit Pathre
+Neeraj Bannore
+Anita Raorane ( tentative)
+Roshan Soni",88YK743,,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,16 GB,512 GB + 1TB HDD,"i5, 10th Generation, 16GB Ram, 512 GB SSD, 1TB HDD @ 5400 RPM, without Graphics",Yes,Dell,,03 Aug 20,03 Aug 20,29 SEPT 2024,29 SEPT 2024,,,NA,NA,April,NO,,
+66,WB-121,IN Stock (MUM),"Rumit Pathre
+Ganesh Basyal
+Mihir Panchal"," 898QYZ2
+",,NA,Usable-SESA,Mumbai,Laptop,i5 8th Gen,32 GB,1 TB SSD,"i5;16 GB RAM - 2667 MHz ; 1 TB SSD ; 256 GB HDD
+",Yes,Dell,,10 Oct 20,NA,29 September 24,29 September 24,,,NA,NA,April,NA,,
+67,WB-122,IN Stock (MUM),"Abhishek Padlekar
+Pandurang Pampatwar
+New Machine", 185QYZ2,,NA,Usable-NonSESA,Mumbai,Laptop,i510th Gen,32 GB,1 TB SSD + 256 GB SSD,"i5:RAM-32 GB;2666MHz
+SSD-256 GB
+SSD- 1 TB",Yes,Dell,,10 Oct 20,NA,29 September 24,29 September 24,,,,,April,,,
+68,WB-123,IN Stock (MUM),"Pravesh Mishra
+Mayuresh Pisat
+Mahtab Shah
+Yash Harad
+Preeti Pawar
+Rohan Vichare
+New Machine",2ZYT173,,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,16 GB,1 TB HDD + 256 GB SSD,"Base: Core i5 ; 8 GB ; 256 MB SSD ; 1 TB HDD
+To upgrade RAM: +8GB",Yes,Dell,,11-Nov-2020,11-Nov-2020,13-Nov-2023,13-Nov-2023,,,NA,NA,April,NA,,
+69,WB-124,IN Stock (MUM),"Mahesh Labhe
+New Machine",3ZYT173,,NA,Usable-NonSESA,Mumbai,Laptop,i510th Gen,16 GB,1 TB HDD + 256 GB SSD,"Base: Core i5 ; 16 GB ; 256 MB SSD ; 1 TB HDD
+",Yes,Dell,,11-Nov-2020,11-Nov-2020,13-Nov-2023,13-Nov-2023,,,NA,NA,April,NA,,
+70,WB-125,Vinay Sharma,"Sayalee Padwal
+Vaibhav Koshe
+Ranjeet Gupta
+Avdhesh Chauhan
+Shyam Rochlani
+New Machine",4ZYT173,,NA,In Use,Mumbai,Laptop,i510th Gen,16 GB,1 TB HDD + 256 GB SSD,"Base: Core i5 ; 16 GB ; 256 MB SSD ; 1 TB HDD
+RAM Frequency - 2667 MHz",Yes,Dell,,11-Nov-2020,11-Nov-2020,,13-Nov-2023,,,NA,NA,April,NA,,
+71,WB-126,IN Stock (MUM),"Shraddha Pisal
+Nikhil Amritkar 
+Narasimha Readdy
+Pratik Poojary
+Amarjeet Prajapati
+Nitesh Sawant
+New Machine",8V3V173,,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,Base: Core i5 ; 16 GB ; 256 MB SSD ; 1 TB SSD)WB-87);16 GB RAM,Yes,Dell,,11-Nov-2020,11-Nov-2020,17-Nov-2023,17-Nov-2023,,,NA,NA,April,NA,,
+72,WB-127,IN Stock (MUM),"Mahesh Kanholi
+Gorakhnath Choudhary-Tentative
+Chetna Khandelwal-Tentative
+Suhail Shaikh
+New Machine",BV3V173,,NA,Unusable,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD / 256 GB SSD,"Base: Core i5 ; 16 GB - 2667 MHz ; 
+256 MB SSD ; 1 TB HDD
+",Yes,Dell,,11-Nov-2020,11-Nov-2020,17 November 23,17 November 23,,,NA,NA,NA,NA,Yes,
+73,WB-128,IN Stock (MUM),"Labeeb Khan
+Tauseef Shaikh
+Shubham Yadav
+New Machine",9V3V173,,NA,Under Repair,Mumbai,Laptop,i5 8th Gen,16 GB,256 SSD,"Base: Core i5 ; 256 MB SSD ; 1 TB HDD
+16 GB RAM",Yes,Dell,,11-Nov-2020,11-Nov-2020,17-Nov-2023,17-Nov-2023,,,NA,NA,NA,NA,Yes,
+74,WB-129,IN Stock (MUM),"Anzar Ansari
+Umaji Morge-Tentative
+Shambhunath Gupta
+Sunny Creado
+Shahnawaz Khan
+Amey Mhatre
+Hussain Rizvi
+New Machine"," 1D1ZF73
+",,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,24 GB,1 TB SSD,"Base: Core i5 ; 16 GB + 8GB RAM ; 1 TB SDD;15'screen
+",Yes,Dell,,28-Nov-2020,NA,19 December 23,19 December 23,,,NA,NA,NA,NA,Yes,
+75,WB-130,IN Stock (MUM),"Hemant Patel
+Keval Limbachiya
+Anmol Ranglani
+Pradeep Gupta
+New Machine"," 2D1ZF73
+",,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,32 GB,1 TB SSD,"Base: Core i5 ; 16 GB ; 256 MB SSD ; 1 TB HDD
+2667 MHz RAM Freq.",Yes,Dell,,28-Nov-2020,NA,19 December 23,19 December 23,,,,,April,NA,,
+76,WB-131,IN Stock (MUM),"Pooja Bhise
+Sunny Creado
+Pralhad Bhandari
+Nikhil Amrutkar
+Roshan Kather
+Shubham Shirke 
+Shubham Upadhyay
+Shubham Yadav (TEMP)"," JC1ZF73
+",,NA,Unusable,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD / 256 GB SSD,"Base: Core i5 ; 16 GB- 2667 MHz ; 256 MB SSD ; 1 TB HDD
+",Yes,Dell,,28-Nov-2020,28-Nov-2020,19-Dec-2023,19-Dec-2023,,,NA,NA,April,NA,,
+77,WB-132,IN Stock (MUM),"Karan Chauhan
+Avadhesh Chauhan
+Shivam Parab
+Rakesh Pedhamkar/Panchal
+New Machine","3D1ZF73
+",,NA,Usable,Mumbai,Laptop,i5 8th Gen,24 GB,1 TB HDD + 256 GB SSD,"Base: Core i5 ; 16 GB ; 256 MB SSD ; 1 TB HDD
+RAM Freq - 2667 MHzz",Yes,Dell,,28-Nov-2020,NA,19 December 23,19 December 23,,,NA,NA,April,NA,2 charger with same tag Yes,
+78,WB-133,IN Stock (MUM),"Anirudh Gupta
+Pranali Kanse
+Gaurav Gupta
+Shahnawaz Khan
+Roshan Maur
+Chinmay Parab
+Gaurang Kelkar
+New Machine","4D1ZF73
+",,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,16 GB,256 SSD,"Base: Core i5 ; 16 GB ; 256 MB SSD ; 1 TB HDD
+",Yes,Dell,,28-Nov-2020,28-Nov-2020,19 December 23,19 December 23,,,NA,NA,April,NA,,
+79,WB-134,IN Stock (MUM),"Nimesh Jethva
+Pooja Bhosle
+Akash More
+Siddharth Borge
+Pandurang Pampatwar"," HC1ZF73
+",,NA,Usable-NonSESA,Mumbai,Laptop,i510th Gen,16 GB,1 TB HDD + 256 GB SSD,"
+Base: Core i5 ; 16 GB 32 GB - 2667 MHz ; 256 MB SSD ; 1 TB HDD
+",Yes,Dell,,28-Nov-2020,19-Dec-2023,19-Dec-2023,19-Dec-2023,,,NA,NA,April,NA,,
+80,WB-135,Muskan Hingorani,"Nilam Sutar
+Ashish Padavale
+Shariq Ansari
+New Machine","DHDQF73
+",,NA,In Use,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD + 256 GB SSD,"Base: Core i5 ;256 MB SSD ; 1 TB HDD
+RAM: 16GB",Yes,Dell,,29-Nov-2020,NA,6 December 23,6 December 23,,,,,,,,
+81,WB-136,IN Stock (MUM),"Amis Vora
+Vinod Patil
+Pranit Naik
+Mihir Panchal
+New Machine","GHDQF73
+",,NA,Unusable,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD / 256 GB SSD,Base: Core i5 ; 256 MB SSD ; 1 TB HDD RAM: 16 GB,Yes,Dell,,29-Nov-2020,29-Nov-2020,6-Dec-2023,6-Dec-2023,,,NA,NA,April,No,,
+82,WB-137,IN Stock (MUM),"Pooja Bhise
+Yash Sonparote
+Yash Rathore
+New Machine"," FHDQF73
+",,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD / 256 GB SSD,"Base: Core i5 ; 16 GB ; 256 MB SSD ; 1 TB HDD
+RAM Fre. - 2667 MHz",Yes,Dell,,29-Nov-2020,,6-Dec-2023,6-Dec-2023,,,NA,NA,April,No,,
+83,WB-138,IN Stock (MUM),"Admin SESA machine 
+Pratik Matkar
+ Keval Limbachiya
+Nikhil Kambale
+Abhishek Shinde
+New Machine","HHDQF73
+",,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB HDD / 256 GB SSD,Base: Core i5 ; 16 GB ; 256 MB SSD ; 1 TB HDD,NO,Dell,,29-Nov-2020,NA,6 December 23,6 December 23,,,,,,,,
+84,WB-139,IN Stock (MUM),"Shaheem Shaikh
+Neeraj Bannore
+New Machine","BHDQF73
+",,NA,Under Repair,Mumbai,Laptop,i3 10th Gen,8 GB,1 TB HDD + 256 GB SSD,"Base: Core i3 ; 8 GB ; 256 MB SSD ; 1 TB HDD
+To upgrade RAM: +8GB",Yes,Dell,,29-Nov-2020,29-Nov-2020,6-Dec-2023,6-Dec-2023,,,NA,NA,April,NA,NA,
+85,WB-140,IN Stock (MUM),"Shwetha Shetty
+Nandita Chandravanshi
+Karishma Deka
+New Machine","8HDQF73
+",,NA,Under Repair,Mumbai,Laptop,i3 7th Gen,16 GB,1 TB HDD,"Base: Core i3 ; 8 GB ; 256 MB SSD ; 1 TB HDD
+To upgrade RAM: +8GB",Yes,Dell,,29-Nov-2020,29-Nov-2020,6-Dec-2023,6-Dec-2023,,,NA,NA,April,NA,,
+86,WB-141,Krishi Doshi (Sales),"Shreya Kadam (Hiring)
+Yashodhan Ambekar(Hiring)
+Sanket Gurav
+Rutuja Patil
+Aakash Ete
+New Machine","9HDQF73
+",,NA,In Use,Mumbai,Laptop,i5 10th Gen,16 GB,1 TB HDD + 256 GB SSD,"Base: Core i3 ; 8 GB - 2667 MHz; 256 MB SSD ; 1 TB HDD
+To upgrade RAM: +8GB",Yes,Dell,,29-Nov-2020,29-Nov-2020,6-Dec-2023,6-Dec-2023,,,NA,NA,April,NA,,
+87,WB-142,Hiring Team ,"Animish Pande
+Pragya Singh"," CHDQF73
+",,NA,In Use,Mumbai,Laptop,i3 7th Gen,8 GB,1 TB HDD,"Base: Core i3 ; 8 GB ; 256 MB SSD ; 1 TB HDD
+To upgrade RAM: +8GB",Yes,Dell,,29-Nov-2020,NA,6 December 23,6 December 23,,,,,April,NA,Yes,
+88,WB-143,IN Stock (MUM),"Ved Thakur
+Rishab Singh
+Vishal Sutar
+Ankit Khandeparkar
+New Machine",43LLWC3,,NA,Usable-NonSESA,Mumbai,Laptop,i5 11th Gen,24 GB,1 TB HDD / 256 GB SSD,24 GB RAM - 3200 MHz Freq. 256 SSD;1 TB HDD :i5,Yes,Dell,,02-Apr-2021,2 April 21,2 April 22,4 February 25,,,,,April,,3 charger with same tag Yes,
+89,WB-144,Aatmaj Mhatre,"Preeti Pawar
+Sunny Singh
+New Machine",13LLWC3,,NA,In Use,Mumbai,Laptop,i5 11th Gen,16 GB,1 TB SSD,16 GB RAM -3200 MHz ;1 TB SSD;1 TB HDD,Yes,Dell,,02-Apr-2021,2 April 21,,4 February 25,,,,,April,,,
+90,WB-146,IN Stock (MUM),"Labeeb Khan
+Anurag Patel",33LLWC3,,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,24 GB,1 TB SSD,24 GB RAM - 3200 MHz; 1 TB SSD; 1TB HDD ,Yes,Dell,,02-Apr-21,2 April 21,4 February 25,4 February 25,,,NA,NA,April,NA,,
+91,WB-147,IN Stock (MUM),"Krishi Doshi
+Shubhalakshmi Rao(Hiring)
+Harunaharan Manoharan 
+Yash Sonparote
+Pratik Mhaske
+Abhishal Yadav
+New Machine
+",63LLWC3,,NA,Usable-NonSESA,Mumbai,Laptop,i5 11th Gen,32 GB,1 TB SSD,i5-11gen;32GBRAM;1TB SSD;3200 MHz,Yes,Dell,,02-Apr-21,2 April 21,,4 February 25,,,,"CNTRL Key Not working
+Power Port Issue ",April,NA,,
+93,WB-149,IN Stock (MUM),"Rasika Hiware 
+Akshay Bura
+Preetam Rane
+New Machine",HGM90B3,Invoice Link,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,1 TB SSD,i5 Core generation/15' screen;16 GB RAM-2666 MHz;1TB SSD+256 GB SSD;GTX 1650,Yes,Dell,,19-Jun-21,19 June 21,15 July 22,15 July 22,,,,,April,,,
+94,WB-150,IN Stock (MUM),"Amit Lokhande
+Siddhesh Morye
+Utsav Chaudhary
+New Machine",9GM90B3,Invoice Link,NA,Usable-NonSESA,Mumbai,Laptop,i5 11th Gen,8 GB,1 TB HDD / 256 GB SSD,i5 Core generation/15' screen;16 GB RAM-2666 MHz;1TB SSD+256 GB SSD;GTX 1650,Yes,Dell,G3 15 3500,19-Jun-21,19 June 21,15 July 22,15 July 22,,,,,April,,,
+95,WB-151,IN Stock ,"Pravin (ARC Eng)
+Sameer Shah (Tester)
+Tejaswi(Hiring)
+Yash Sonparote
+Omkar Patil
+Rohan Choudhari
+Vijayalakshmi Nadar
+Chinmay Parab
+New Machine
+",5GY84F3,Invoice Link,SESA843540,Usable-SESA,Mumbai,Laptop,i5 11th Gen,16 GB,1 TB SSD,I5;16 GB RAM - 3200 MHz;512 GB SSD; No HDD,Yes,Dell,Vostro 3500,20-Jun-2021,20 June 21,,4 February 25,,,,,April,NA," 2 charger with same tag
+Yes",
+96,WB-152,Hiring Team ,"Mohit Chaclani
+Sonia Varma
+Shambhunath Gupta
+Amis Vora
+Shubham Shirke
+New Machine",FWKD4F3,Invoice Link,NA,In Use,Mumbai,Laptop,i5 11th Gen,24 GB,1 TB SSD,I5;24 GB RAM - 3200 MHz;1 tb  SSD; No HDD,Yes,Dell,Vostro 3500,20-Jun-2021,20 June 21,,4 February 25,,,On 16th May 2024 Touchpad has been replaced by dell,,April,,,
+97,WB-153,IN Stock (MUM),"Krishi (Sales Team)
+Premal Kadam
+Asmita Singh
+Admin SESA machine
+Pratiksha Salunke
+Mahesh Labhe
+Shubham Yogi
+Sandesh Kamble
+Chinmay Parab
+Sandeep Kalisetty 
+Ganesh Singh
+Durgesh Yaduvanshi
+Shaheem Shaikh
+Siddhesh Morye
+New Machine",4GY84F3,Invoice Link,NA,Usable-NonSESA,Mumbai,Laptop,i5 8th Gen,16 GB,512 GB SSD,I5;512GB SSD;16 GB RAM;3200 MHz;GPU2 GB Mx330,NO,Dell,Vostro 3500,20-Jun-21,20 June 21,,4 February 25,,,,,April,NA,Yes,
+98,WB-154,IN Stock (MUM),"Animish Pande
+Ranjeet Gupta
+Sagar Mahajan
+Nilesh Sonwane
+Vinod Patil
+New Machine",7GY84F3,Invoice Link,NA,Usable-NonSESA,Mumbai,Laptop,I5 11TH Gen,24 GB,512 SSD,i5;512GB SSD;16 GB RAM+ 8GB RAM ;3200 MHz;GPU2 GB Mx330,Yes,Dell,Vostro 3500,20-Jun-21,20 June 21,,4 February 25,,,Charging port issue ,,April,,"3 morecharger with same tag
+yes",
+99,WB-155,IN Stock (MUM),"Shubham Patil
+Taukir Shaikh
+Tauseef Shaikh
+Rishab Singh
+Bipin Mishra
+New Machine",3GY84F3,Invoice Link,NA,Usable-SESA,Mumbai,Laptop,i5 11th Gen,24 GB,1 TB HDD + 256 GB SSD,i5;16 GB RAM-3200 MHz;256 GB SSD;1 TB HDD,Yes,Dell,Vostro 3500,20-Jun-21,20 June 21,,23 June 23,,,NA,NA,April,NO,,
+100,WB-156,Sakshi Gangurde,"Shreya Kadam(Hiring)
+Karan Chauhan
+Sunny Creado
+Hemant Pade
+Chinmay Parab
+Preeti Morasiya
+Siddharth Borge
+New Machine",GWKD4F3,Invoice Link,NA,In Use,Mumbai,Laptop,i5 11th Gen ,32 GB,1 TB SSD,i5; 32 GB RAM - 3200 MHz:1 TB SSD;NO HDD ,Yes,Dell,Vostro 3500,22-Jun-2021,,,11 April 25,,,NA,RAM Need to replace ONE RAM Not wokring,April,NA,,
+101,WB-157,IN Stock (MUM),"Shreya Kadam(Hiring)
+Shwetha Shetty
+Shreya Dhanavade
+New Machine",7NLD4F3,Invoice Link,NA,Usable-SESA,Mumbai,Laptop,i3 7th Gen,16 GB,256 SSD,I3;256 GB SSD; 16 GB RAM;no HDD;2667 MHz,Yes,Dell,Vostro 3500,22-Jun-21,22-Jun-21,24-Jun-23,24-Jun-23,,,,Keyboard Issue ,,,Yes,
+102,WB-158,IN Stock (MUM),"Manas Kulkarni
+Rupali Karande
+Bhagyashree Gaikwad
+Pralhad Bhandari
+Vijayalakshmi Nadar
+Anmol Ranglani
+Sridevi D
+Chirag Shroff
+ChiragC@123
+New Machine",2GY84F3,Invoice Link,NA,In Use,Mumbai,Laptop,I5 11TH Gen,16 GB,1 TB SSD,"Intel® CoreTM i5 11th Gen
+64-bitWin 10; 1 TB SSD;32GB RAM;3200MHz",Yes,Dell,Vostro 3500,20-Jun-21,20-Jun-21,20-Jun-21,4 February 25,,,,,April,,Yes,
+103,WB-159,IN Stock (MUM),"Kunal Singh
+Aniket 
+Rumit Pathre
+New Machine",JK0K863,,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,24 GB,1 TB SSD,i5 10th Gen;16 GB RAM/1 TB SSD/1650 4 GB -NVIDIA Graphics;Win 10 Win 11(home edition),Yes,Dell,G3 15 3500,28.11.2021,28.11.2021,27 February 22,27 February 22,,,,,April,NA,,
+104,WB-160,IN Stock (MUM),"Mahtab Shah
+Akanksha Naruka
+New Machine",53LLWC3,NA,NA,Usable-NonSESA,Mumbai,Laptop,i5 11th Gen,16 GB,1 TB SSD + 256 GB SSD,i5 10th Gen8 GB RAM 3200 MHz;250 GB SSD;1TB HDD,Yes,Dell,Vostro 3500,02-Apr-21,02-Apr-21,04-Apr-23,04-Apr-23,,,NA,Touchpad & Keyboard ,April,NA,,
+105,WB-161,"Vaishnavi Prabhu
+Marketing","Pranali Nanawade(Tester)
+Akash More
+Avinash Patil
+Mahesh Kanholi
+Vikas Srivastava
+Himakshi Deokar
+Raginee Iyer
+New Machine",6GY84F3,Invoice Link,NA,In Use,Mumbai,Laptop,i5 11th Gen,24 GB,1 TB SSD,i5 10th Gen16 GB RAM 3200 MHz;256 GB SSD;1TB HDD,Yes,Dell,Vostro 3500,20-Jun-21,20 June 21,,4 February 25,,,,,,,yes,
+106,WB-162,Tejaswi Mane,"Jayalaxmi Shetty
+Shaheem Shaikh
+Kiran Tharbole",7P477F3,Invoice Link,NA,In Use,Mumbai,Laptop,i3 11th Gen ,16 GB,256 SSD,i3;16 GB 2667 MHz;256 GB SSD;1 TB HDD ,Yes,Dell,Vostro 3500,23-Jun-2021,23-Jun-2021,25-Jun-2023,25-Jun-2023,,,NA,NA,April,NA,,
+107,WB-163,IN Stock (MUM),"Mukul Kulkarni
+Gorakhnath Choudhary
+New Machine",2KFD8F3,Invoice Link,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,16 GB,512 SSD,"i510th Gen;16 GB RAM-512 GB SSD;2GB Graphics
+14' screen",NO,Dell,Vostro 3400,28.11.2021,28.11.2021,,4 February 25,,,NA,Good Machine,April,NO,Yes,
+108,WB-164,IN Stock (MUM),"Shital Adkar
+Hemant Patel
+Shital Adkar
+Sanket Magodia
+New Machine",3BT67F3,Invoice Link,NA,Usable-NonSESA,Mumbai,Laptop,i5 11th Gen,16 GB,512 GB SSD,i5 10th Gen;8 GB RAM/512 GB SSD/1650 4 GB -NVIDIA Graphics;Win 10 Win 11(home edition),Yes,Dell,Vostro 3500,24-Jun-2021,24-Jun-2021,26-Jun-2023,26-Jun-2023,,,Ram is increases by 16 GB DDR4,NA,April,NA,,
+109,WB-165,IN Stock (MUM),"Sunny Creado
+Gaurang Kelkar
+Sent to Pallavi (in HYD)",FQZJ863,,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,24 GB,1 TB SSD,"♦i5 10th Gen 
+♦16 GB RAM/1 TB SSD/1650 4 GB -NVIDIA Graphics 
+♦Win 10 Win 11(home edition)",yes,Dell,G3 15 3500,17-Nov-21,17-Nov-21,27-Feb-22,27-Feb-22,,,NA,NA,April,NA,,
+110,WB-166,IN Stock (MUM),"Akshay Bura
+Vishwajeet Behera (SEOS) 
+Sunny Creado
+New Machine",8DXJ863,-,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,16 GB,512 GB SSD,"♦i5 10th Gen
+♦16 GB RAM/512 GB SSD/512 GB NVIM/1650 4 GB -NVIDIA Graphics
+♦Win 10 Win 11(home edition)",,Dell,G3 15 3500,17-Nov-21,NA,27-Feb-22,27-Feb-22,,,NA,NA,April,NA,,
+111,WB-167,IN Stock (MUM),"Pratik Wadkar
+Nikita Bhathija
+Annu Tiwari
+Shashank Kumar
+Pratik Matkar
+Shiv Shankar Gojia
+Roshan Maur
+Faizan Ansari
+New Machine",1SZJ863,Invoice Link,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,32 GB,512 SSD,"♦i5 10th Gen
+♦32 GB RAM/512 GB SSD/512 GB NVIM/1650 4 GB -NVIDIA Graphics
+♦Win 10 Win 11(home edition)",YES,Dell,G3 15 3500,Na,NA,27 February 22,27 February 22,,,,,April,NA,yes,
+112,WB-168,IN Stock (MUM),"Akash Ghagre
+Umaji Morge
+Santhosh Vanam
+Bhavesh Gaba
+Anita Raorane
+New Machine",BD477F3,Invoice Link,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,16 GB,1 TB SSD,i5;16GB RAM;64 Bit OS;11th Gen Intel(R)Core(TM);16 GB RAM;512 GB SSD,YES,Dell,Vostro 3500,17-Nov-21,17 November 21,4 February 25,4 February 25,,,,,April,Na,,
+113,WB-169,IN Stock (MUM),"Mamta Sawant
+Anurag Bagul
+JAHAR KUMAR PAUL
+Akshay Bura
+Preetam Rane
+Sunny Creado
+New Machine",F1WWY93,Invoice Link,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,32 GB,1 TB SSD,"♦i5 10th Gen
+♦32 GB RAM/1 TB SSD/1650 4 GB -NVIDIA Graphics
+♦Win 10 Win 11(home edition)",Yes,Dell,G3 15 3500,17-Nov-21,,18 August 24,18 August 24,,,NA,NA,April,NA,,
+114,WB-170,Shaktisinh Rathod ,"Abhijit Choudhari
+Ashwini Rane 
+Neetu Khare(Hiring)
+Rachana Bhat",56V4ZH3,Invoice Link,NA,In Use,Mumbai,Laptop,i5 10th Gen,16 GB,512 SSD,"♦i510th Gen
+♦16 GB RAM-512 GB SSD
+♦2GB Graphics
+",Yes,Dell,Vostro 3400,17-Nov-21,,24 December 22,24 December 22,,,,,,NA,,
+115,WB-171,IN Stock (MUM),"Sanket Magodia
+New Machine",CCBW203,Invoice Link,NA,Usable-NonSESA,Mumbai,Laptop,i5 10th Gen,40 GB,256 SSD,"♦i5 10th Gen
+♦40GB RAM/1 TB SATA/1650 4 GB -NVIDIA Graphics/256 SDD
+♦Win 10 Win 11(home edition)",Yes,Dell,G3 15 3500,17-Nov-21,,28 July 22,28 July 22,,,NA,NA,April,NA,,
+116,WB-173,IN Stock (MUM),"Sonia Varma
+Sent HYD/Smart Techies
+Atharva Kaurwar
+Nikhil Amritkar
+Vijayalaxmi Nadar temp
+Sunny Singh temp
+Shahid Khan 
+Gaurang Kelkar
+New Machine
+",5G3TQL3,,NA,Usable-NonSESA,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,i7;16GB RAM;64 Bit OS;11th Gen Intel(R)Core(TM);1TB SSD,Yes,Dell,Vostro 5620,10-Jun-22,,,14 July 26,,,,,April,,,
+117,WB-174,IN Stock (MUM),"Durgesg Yaduwanshi
+HYD Storage / Smart Techies
+Shashank Kumar
+Vindo Patil
+Vishal Sutar
+New Machine",6G3TQL3,,NA,Usable-NonSESA,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,i7;16GB RAM;64 Bit OS;11th Gen Intel(R)Core(TM);1TB SSD,Yes,Dell,Vostro 5620,10-Jun-22,10 June 22,14 July 26,14 July 26,,,NA,NA,April,NA,,
+118,WB-175,IN Stock (MUM),"Annu Tiwari 
+Amey Mhatre
+New Machine",7G3TQL3,,NA,Usable-NonSESA,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,i7;16GB RAM;64 Bit OS;11th Gen Intel(R)Core(TM);1TB SSD,Yes,Dell,Vostro 5620,10-Jun-22,10 June 22,14 July 26,14 July 26,,,,,April,,Yes,
+119,WB-176,IN Stock (MUM),"Pavan Kumar Kathi
+HYD Storage / Smart Techies/SE IT
+Ayan Pasha
+Sandeep Kalisetty
+Viraj Joshi
+New Machine",8G3TQL3,,,Usable-NonSESA,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,i7;16GB RAM;64 Bit OS;11th Gen Intel(R)Core(TM);1TB SSD,NO,Dell,Vostro 5620,10-Jun-22,,,14 July 26,,,,,,,,
+120,WB-177,IN Stock (MUM),"Atharva Kaurwar
+Shubham Yogi
+Vinod Patil
+New Machine",BG3TQL3,,NA,Usable-NonSESA,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,i7;16GB RAM;64 Bit OS;11th Gen Intel(R)Core(TM);1TB SSD,Yes,Dell,Vostro 5620,10-Jun-22,,14 July 26,14 July 26,,,,,April,,,
+121,WB-178,IN Stock,"Shraddha Pisal
+HYD Storage / Smart Techies
+Arun Joy
+Sent HYD/Smart Techies
+Swapnil More
+Santhosh Vanam
+New Machine",CG3TQL3,,NA,Usable-NonSESA,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,i7;16GB RAM;64 Bit OS;11th Gen Intel(R)Core(TM);1TB SSD,Yes,Dell,Vostro 5620,10-Jun-22,10-Jun-22,14-Jul-26,14-Jul-26,,,,,April,NA,,
+122,WB-179,IN Stock (MUM),"Sunil Kaushal ( Additional laptop for R&D)
+Pratiksha Shinde
+Suhail Shaikh
+New Machine
+",DG3TQL3,,NA,Usable-NonSESA,Mumbai,Laptop,i7 11th Gen,32 GB,512 GB SSD,i7;16GB RAM;64 Bit OS;11th Gen Intel(R)Core(TM);1TB SSD,Yes,Dell,Vostro 5620,10-Jun-22,,,14 July 26,,,"1 TB SSD Swapped with WB 232 on 30 June 2026 by vishnu 
+Since the WB232 SSD was dead",,April,,,
+123,WB-180,Omkar Babrekar(Testing Purpose),"HYD Storage / Smart Techies/ with SE IT
+Vamsi 
+Sameer Nakhare
+Pratik Poojary
+New Machine",FG3TQL3,,NA,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,i7;16GB RAM;64 Bit OS;11th Gen Intel(R)Core(TM);1TB SSD,Yes,Dell,Vostro 5620,10-Jun-22,,14 July 26,14 July 26,,,,,April,,,
+124,WB-181,Nitin Sakpal,"Mahesh Labhe
+Bikshapathi Devatha
+New Machine",GG3TQL3,,,In Use,Mumbai,Laptop,i7 11th Gen,24 GB,1 TB SSD,i7;16GB RAM;64 Bit OS;11th Gen Intel(R)Core(TM);1TB SSD,Yes,Dell,Vostro 5620,10-Jun-22,10-Jun-22,14-Jul-26,14 July 26,,,NA,NA,April,NA,Yes,
+125,WB-182,IN Stock (MUM),"Santhosh Vanam
+Swathi Krishnan
+New Machine
+",HG3TQL3,,,Usable-NonSESA,Mumbai,Laptop,i7 11th Gen,32 GB,256 GB SSD,i7;16GB RAM;64 Bit OS;11th Gen Intel(R)Core(TM);1TB SSD,NO,Dell,Vostro 5620,10-Jun-22,,,14 July 26,,,"1 TB SSD Swapped with WB 223 on 30 June 2026 by vishnu 
+Since the WB223 SSD was dead",,,,,
+126,WB-183,Innovation Lab Server,"Chetna Khandelwal
+New Machine",GL5RJQ3,,NA,In Use,Mumbai,Laptop,I5 11TH Gen,16 GB,512 GB SSD,i5;11th gen;16GB RAM;3200MHz;512GB SSD,Yes,Dell,Vostro 15 3510,24-Jun-2022,24-Jun-2022,30 June 25,29 June 26,,,NA,NA,April,NA,,
+132,WB-184,Yash Chaudhari,"Rahul Karanade (Business Devloper)
+Rohit Wahwal
+Sanket Gurav
+Shubham Yadav
+New Machine",5M5RJQ3,,NA,In Use,Mumbai,Laptop,i5 11th Gen,32 GB,512 GB,i5;11th gen;16GB RAM;3200MHz;512GB SSD,Yes,Dell,Vostro 15 3510,24-Jun-2022,,,29 June 26,,,,,April,,,
+133,WB-185,Varad Dhumale,"Pranali Nanaware
+Farzan Pagdiwala 
+New Machine",1M5RJQ3,,SESA840412,In Use,Mumbai,Laptop,i5 11th Gen,32 GB,512 SSD,i5;11th gen;16GB RAM;3200MHz;512GB SSD,Yes,Dell,Vostro 15 3510,24-Jun-2022,,,29 June 26,,,On 06/06/2025 system Hinge with display cover has been chnaged by the company,,April,,,
+134,WB-186,Yash Khandagle,"Siddhesh Wayal
+Pratiksha Salunkhe
+NIkhil Kamble
+New Machine",HL5RJQ3,,NA,In Use,Mumbai,Laptop,i5 11th Gen,32 GB,1 TB SSD,i5;11th gen;15:FHD display;16GB RAM;3200MHz;512GB SSD,Yes,Dell,Vostro 15 3510,24-Jun-2022,,30 June 25,29 June 26,,,NA,NA,April,NA,Yes,
+135,WB-187,Manasi Deshmukh,"Anuja Kamble
+New Machine",PG035BZG,,NA,In Use,Mumbai,Laptop,i3 11th Gen ,12 GB,512 SSD,i3;11thgen;8GB RAM;256 GB SSD;14:Display,Yes,Lenovo,V15 G2-ITL Laptop,07-Nov-2022,1 November 22,1 April 24,1 April 24,,,,,April,Expired,,
+136,WB-188,"In Stock (MUM)
+
+Reserved for ADMIN","RupeshKumar Sharma (ADMIN)
+Sachin Pagare
+Rushikesh Sinalkar
+Mukesh Vishwakaram
+Rajni Bhagat
+New Machine",PG035BVT,,NA,Usable-NonSESA,Mumbai,Laptop,i3 11th Gen ,12 GB,256 SSD,i3;11thgen;8GB RAM;256 GB SSD;14:Display,Yes,Lenovo,V15 G2-ITL Laptop,07-Nov-2022,1 November 22,1 April 24,1 April 24,,,NA,NA,April,NA,NA,
+137,WB-189,Rashmi Sawant,"Shwetha Shetty
+Deepali Motwani
+Kaustubh Mhatre
+New Machine",PG035CA9,,NA,In Use,Mumbai,Laptop,i3 11th Gen ,12 GB,256 GB HDD,i3;11thgen;8GB RAM;256 GB SSD;14:Display,Yes,Lenovo,V15 G2-ITL Laptop,07-Nov-2022,1 November 22,1 April 24,1 November 23,,,,,April,Not Avai,,
+138,WB-190,In Stock (MUM),"Shivam Singh
+New Machine",9L5RJQ3,,,Usable-SESA,Mumbai,Laptop,i5 11th Gen ,32 GB,1 TB SSD,"i5;11th gen;15""FHD display;16GB RAM;3200MHz;512GB SSD",yes,Dell,Vostro 15 3510,24-Jun-2022,24 June 22,30 June 25,29 June 26,,,,,April,,,
+139,WB-191,Kaustubh Mhatre,New Machine,Y97NMH94NY,,,In Use,Mumbai,Laptop,i5 11th Gen,24 GB,1 TB SSD,"Apple M2, 24 GB RAM, Ventura 13.0",NO,MacBook,"MacBook Air (M2, 2022)",11-Dec-2022,1 December 22,1 December 23,23 December 25,,,,,,,,
+140,WB-192,Shivam Singh,"Snehil Nair
+smart techies
+Amey Saitavdekar
+New Machine",PF44H0XQ,Invoice Link,SESA525768,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,"i7;11th gen;16GBSoldered RAM;1TBSSD(NVME);14""FHD display;",Yes,Lenovo,T14 Gen 2,25-Mar-23,1 March 23,1 March 26,1 March 26,,,,,April,,,
+141,WB-193,Karthik Balkrishnan,"Sonia Varma
+HYD Storage / Smart Techies
+Rohit Wahwal
+Nikhil Lad
+New Machine",PF45MW61,Invoice Link,SESA821277,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,"i7;11th gen;16GBSoldered RAM;1TBSSD(NVME);14""FHD display;",Yes,Lenovo,T14 Gen 2,25-Mar-23,1 April 23,1 March 26,1 March 26,,,,,April,,,
+142,WB-194,In Stock MUM,"Pravin Kumar Yadav
+Shashank Parmar
+New Machine",PF45SH4Q,Invoice Link,NA,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,"i7;11th gen;16GBSoldered RAM;1TBSSD(NVME);14""FHD display;",Yes,Lenovo,T14 Gen 2,25 March 23,1 April 23,1 March 26,1 March 26,,,,,April,,,
+143,WB-195,Rohit Wahwal,"In Stock (SE IT)
+Kunal singh
+Vikas Shrivastava
+New Machine",PF45V9SY,Invoice Link,NA,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,"i7;11th gen;16GBSoldered RAM;1TBSSD(NVME);14""FHD display;",NO,Lenovo,T14 Gen 2,25-Mar-23,1 April 23,1 March 26,1 March 26,,,,,,,,
+144,WB-196,Shubham Yogi ,"HYD Storage / Smart Techies
+Dhananjay Patil
+New Machine",PF45SP88,Invoice Link,NA,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,"i7;11th gen;16GBSoldered RAM;1TBSSD(NVME);14""FHD display;",Yes,Lenovo,T14 Gen 2,25 March 23,1 April 23,1 March 26,1 March 26,,,,,April,,,
+145,WB-197,"Akshay Bura
+","Narasimha Reddy
+New Machine",PF45PXA2,Invoice Link,SESA620430,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,"i7;11th gen;16GBSoldered RAM;1TBSSD(NVME);14""FHD display;",Yes,Lenovo,T14 Gen 2,25-Mar-23,1 April 23,1 March 26,1 March 26,,,,,April,,,
+146,WB-198,BIPIN KUMAR,"In Stock (SE IT)
+Srinu Gatla
+New Machine",PF45N01K,Invoice Link,SESA691911,In Use,Mumbai,Laptop,i7 11th Gen,16 GB,512 GB,"i7;11th gen;16GBSoldered RAM;1TBSSD(NVME);14""FHD display;",NO,Lenovo,T14 Gen 2,25-Mar-23,1 April 23,1 March 26,1 March 26,,,,,,,,
+147,WB-199,Pavan Kumar Kathi,"Sent to Hyd 
+sent in Hyd/ Smart Tec
+hiesSunny Singh
+New Machine",PF45F60W,Invoice Link,NA,Usable-SESA,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,"i7;11th gen;16GBSoldered RAM;1TBSSD(NVME);14""FHD display;",Yes,Lenovo,T14 Gen 2,25-Mar-23,1 April 23,1 March 26,1 March 26,,,,,April,,,
+148,WB-200,Pratiksha Salunkhe,"HYD Storage / Smart Techies
+Swapnil More
+sent in Hyd/ Smart Techies
+Amis Vora
+New Machine",PF45V1C7,Invoice Link,SESA776261,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,"i7;11th gen;16GBSoldered RAM;1TBSSD(NVME);14""FHD display;",yes,Lenovo,T14 Gen 2,25-Mar-23,1 April 23,1 March 26,1 March 26,,,NA,NA,NA,NA,NA,
+149,WB-201,ABHINAS MISHRA,"In Stock (HYD Smart Techies)
+Mohit Chanchlani
+Mahesh Labhe
+New Machine",PF44GZ1Z,Invoice Link,NA,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,,Yes,Lenovo,T14 Gen 2,25-Mar-23,1 April 23,1 March 26,1 March 26,,,,,April,,,
+150,WB-202,In Stock (MUM),"Durgesh Yaduvanshi
+Tejas Desai
+New Machine",MP29CFQY,Invoice Link,NA,Usable-NonSESA,Mumbai,Laptop,i5 12th Gen,16 GB,512GB + 512GB,"14.0"" FHD /Intel Core I5-1235UProcessor /16GB/1TB SSD/W11 Pro/3 Cell Li-Polymer Internal Battery, 45Wh/720p HD/Fingerprint Reader/Integrated Graphics/65W AC Adapter LC (3pin)-India/ Wifi+BT/Backpack/CO2 Offset /",Yes,Lenovo,ThinkBook 14,7-Jul-23,1 April 23,1 March 26,1 March 26,,,,,April,,,
+151,WB-203,Tejaswi Mane,"Ashish Mehendale (DH)
+Ishika Baghel
+Tejaswini Kadam
+New Machine",MP29CJD7,Invoice Link,NA,In Use,Mumbai,Laptop,i5 12th Gen,16 GB,512GB + 512GB,"14.0"" FHD /Intel Core I5-1235UProcessor /16GB/1TB SSD/W11 Pro/3 Cell Li-Polymer Internal Battery, 45Wh/720p HD/Fingerprint Reader/Integrated Graphics/65W AC Adapter LC (3pin)-India/ Wifi+BT/Backpack/CO2 Offset /",Yes,Lenovo,ThinkBook 14,7-Jul-23,1 April 23,1 March 26,1 March 26,,,,,April,Exprired,,
+152,WB-204,Vishnu Malakar,Pragya Singh,MP29C7F1,Invoice Link,NA,In Use,Mumbai,Laptop,i5 12th Gen,16 GB,512GB + 512GB,"14.0"" FHD /Intel Core I5-1235UProcessor /16GB/1TB SSD/W11 Pro/3 Cell Li-Polymer Internal Battery, 45Wh/720p HD/Fingerprint Reader/Integrated Graphics/65W AC Adapter LC (3pin)-India/ Wifi+BT/Backpack/CO2 Offset /",yes,Lenovo,ThinkBook 14,7-Jul-23,15-Jul-23,14-Jul-26,14-Jul-26,,,,,April,NA,,
+153,WB-205,In Stock (MUM),"Manali Deshmukh
+Preethi Sekar
+Harshada Samant (Senior Manager )
+Latesh revandkar
+Jayalaxmi Shetty
+Rahul Sakunde",MP29CNQJ,Invoice Link,NA,In Use,Mumbai,Laptop,i5 12th Gen,16 GB,512GB + 512GB,"14.0"" FHD /Intel Core I5-1235UProcessor /16GB/1TB SSD/W11 Pro/3 Cell Li-Polymer Internal Battery, 45Wh/720p HD/Fingerprint Reader/Integrated Graphics/65W AC Adapter LC (3pin)-India/ Wifi+BT/Backpack/CO2 Offset /",Yes,Lenovo,ThinkBook 14,7-Jul-23,1 April 23,1 March 26,1 March 26,,,,,April,Insatlled,Yes,
+154,WB-206,In Stock (MUM),"Shreya Kadam (HR)
+Shweta Yetwekar (HR)
+Khushi Pandey (HR)
+Shubham Pawar (ER)
+Manoj Shrivastav
+Prachi Mayekar
+Harsha Salve
+Sachin Mahadik
+Shwetha Shetty",MP29CNZ8,Invoice Link,NA,Usable-SESA,Mumbai,Laptop,i5 12th Gen,16 GB,512GB + 512GB,"14.0"" FHD /Intel Core I5-1235UProcessor /16GB/1TB SSD/W11 Pro/3 Cell Li-Polymer Internal Battery, 45Wh/720p HD/Fingerprint Reader/Integrated Graphics/65W AC Adapter LC (3pin)-India/ Wifi+BT/Backpack/CO2 Offset /",Yes,Lenovo,ThinkBook 14,7-Jul-23,1 April 23,1 March 26,1 March 26,,,,,April,Installed,Yes,
+155,WB-207,Rupali Karande,"Madhuri Gawade
+In HYD/Madhuri Gawade
+Rupli Karande
+Priyanka Todekar
+New Machine",PF3YBPAL,Link,NA,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,,yes,Lenovo,T14 Gen 2,,1 April 22,1 March 26,1 October 27,,,,,April,NA,,
+156,WB-208,IN Stock MUM,"Bipin Kumar Mishra
+New Machine",PF3YBX5N,,SESA671543,Usable-SESA,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,,Yes,Lenovo,T14 Gen 2,,1 April 22,1 March 26,1 October 27,,,,,April,,,
+157,WB-209,IN Stock (MUM),"Raghunandan Ramgopalan
+Arun Joy
+Sent in HYD/ Smart Techies
+Ranjeet Gupta
+Siddharth Borge
+New Machine",PF3YC8PN,Link,NA,Usable-SESA,Mumbai,Laptop,i7 11th Gen,32 GB,512 GB SSD,,Yes,Lenovo,T14 Gen 2,,1 April 22,1 March 26,1 October 27,,,NA,NA,April,Na,NA,
+158,WB-210,Premal Kadam,"Mahesh Labhe
+Shubham Yadav 
+New Machine",PF3YDCGE,Link,SESA569978,Usable-SESA,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,,yes,Lenovo,T14 Gen 2,,1 April 22,1 March 26,1 October 27,,,,,April,,,
+159,WB-211,Madhuri Gawade,"In Stock (HYD Smart Techies)
+Sunil Kaushal
+Vishal Sutar
+New Machine",PF3YDESL,Link,SESA818211,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,512 GB SSD,,Yes,Lenovo,T14 Gen 2,NA,1 September 22,1 October 25,1 October 27,,,,,,,,
+160,WB-212,In Stock ,"Rohit Wahwal
+Sent in HYD/ Smart Techies
+Nikita Bathija
+Sent in HYD/ Smart Techies
+Vijay Borge
+New Machine",PF3YT1W4 ,Link,,Usable-SESA,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,,Yes,Lenovo,T14 Gen 2,NA,1 September 22,1 October 25,1 October 27,,,16GB additional RAM purchased from Sujay Softech and installed on 25/6/2026,,,,,
+161,WB-213,In Stock HYD,"Abhinas Mishra
+New Machine",PF3YT611,Link,NA,Usable-SESA,Hyderabad,Laptop,i7 11th Gen,32 GB,1 TB SSD,,Yes,Lenovo,T14 Gen 2,,1 September 22,1 October 25,1 October 27,,,,,April,,,
+162,WB-214,Omkar Babrekar,New Machine,PF3YT61N,Link,SESA689304,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,,NO,Lenovo,T14 Gen 2,,1 April 22,1 March 26,1 October 27,,,,,,,,
+163,WB-215,Rohit Wahwal,"In Stock (HYD Smart Techies)
+Mamta Sawant
+IVinay Panchal
+New Machine",PF3YTW9W,Link,SESA823098,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,,Yes,Lenovo,T14 Gen 2,,1 September 22,,1 October 27,,,,,,,,
+164,WB-216,Rupali Karande,"Akash Ghagre
+Ved Thakur
+Pratap Solanki
+New Machine",PF3YV1AT,Link,SESA823085,In Use,Mumbai,Laptop,i7 11th Gen,32 GB,1 TB SSD,,Yes,Lenovo,T14 Gen 2,1 September 22,1 October 25,1 October 25,1 October 27,,,NA,NA,April,NA,NA,
+165,WB-217,Pooja Bhise,"Manas Kulkarni
+HYD Storage / Smart Techies
+Pratik Matkar
+Shambhunath Gupta
+New Machine",PF485SZV ,Link ,NA,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,1 September 23,1 September 23,1 September 26,1 October 27,1 October 27,,NA,NA,April,NA,Yes,
+166,WB-218,Mukul Kulkarni/ 302,"In Stock (HYD Smart Techies)
+Akshay Chandarkar
+Rohan Choudhary
+New Machine",PF48FDM6 ,Link ,SESA837678,Usable-SESA,Hyderabad,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,,1 September 23,1 September 26,1 October 27,1 October 27,,,,,,,
+167,WB-219,Shivam Parab,New Machine,PF48H4FK ,Link ,SESA699981,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,,1 September 23,1 September 26,1 October 27,1 October 27,,,,April,,,
+168,WB-220,Mayuresh Pisat,"HYD Storage / Smart Techies
+Tauseef Shaikh
+New Machine",PF473BT6 ,Link ,SESA838501,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,yes,Lenovo,E15 Gen 4,NA,1 September 23,1 September 26,1 October 27,1 October 27,,NA,NA,April,NA,,
+169,WB-221,Mahesh Kannoli,"SESA ADMIN Machine -1
+Omkar Babrekar
+Vijayalakshmi Nadar
+New Machine",PF48CR48,Link ,SESA706190,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,NA,1 September 23,1 September 26,1 October 27,1 October 27,,,,April,,,
+170,WB-222,Santhosh Vanam,"IN HYD In Stock
+Madhuri Gawade
+Sunny creado
+Pratik Mhaske", PF485SX2 ,Link ,SESA818211,In Use,Hyderabad,Laptop,i5 12th Gen,32 GB,1 TB SSD,,NO,Lenovo,E15 Gen 4,NA,1 September 23,1 September 26,1 October 27,1 October 27,,NA,NA,April,NA,,
+171,WB-223,Asmita Singh,"In Stock (HYD Smart Techies)
+Mahesh Kannoli
+New Machine",PF485FYB,Link ,SESA706190,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,,1 September 23,1 September 26,1 October 27,1 October 27,,"SSD Was Dead, swapped with WB-182.",,April,,,
+172,WB-224,Harunaharan Manoharan,"Asmita Singh
+smart techies
+Akash more
+Jahar Kumar Paul
+Akshay Bura
+Preetam Rane
+Sunny Creado
+New Machine", PF485ATR ,Link ,SESA813674,In Use,Mumbai,Laptop,i5 12th Gen,32 GB,1 TB SSD,,NO,Lenovo,E15 Gen 4,NA,1 September 23,1 September 26,1 October 27,1 October 27,,NA,NA,April ,NA,,
+173,WB-225,Keval Limbachiya,New Machine,PF484V7K,Link ,SESA717462,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,,1 September 23,1 September 26,1 October 27,1 October 27,,june 14th parts were replaced by lenovo,,April,,,
+174,WB-226,Shraddha Pisal,"In Stock (SE IT) 
+Sonia Verma 
+Sandesh Kamble
+Shubham Patil
+Karan Chauhan
+Sonia Verma
+Rishab Singh
+New Machine",PF47B622,Link ,NA,Usable-SESA,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,20-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,,,April,,,
+175,WB-227,Prakash Sewani,New Machine,PF42JDEV,Link ,SESA701219,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,NO,Lenovo,E15 Gen 4,20-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,,,,,,
+176,WB-228,Sayalee Padwal,"Abhishek Padlekar
+Avinash Patil
+New Machine",PF42GN0T,Link ,SESA822200,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,YES,Lenovo,E15 Gen 4,20-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,NA,,April,NA,,
+177,WB-229,Yash Harad,"smart techies
+Shubham Patil
+Akansha Naruka
+New Machine",PF41H38S,Link ,SESA671543,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,20-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,,,April,,,
+178,WB-230,Amey ,"Karthik Balkrishnan
+Mukul Kulkarni
+Mayur Patil
+New Machine",PF42GQ96,Link ,SESA821277,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,20-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,NA,NA,April,NA,NA,
+179,WB-231,Shahnawaz Khan,New Machine,PF48H8C9,Link ,SESA700115,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,20-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,,,April,,,
+180,WB-232,Manas Kulkarni,"IN Stock (HYD)
+Hemant Patel
+Suraj Rane
+New Machine",PF4734RY,Link ,SESA838469,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,20-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,"SSD Was Dead, swapped with WB-179.
+",,April,,,
+181,WB-233,Vamsi Bollipogu,"IN HYD In Stock
+Mehtab Shah
+Sandesh Kamble
+New Machine",PF472Y3B,Link ,SESA818903,In Use,Hyderabad,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,20-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,RAM issue was there raised an ticket in Lenovo ticket got closed,,April,,,
+182,WB-234,Vishal Kanawade,New Machine,PF4717SL,Link ,SESA708064,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,20-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,,,April,,,
+183,WB-235,IN Stock ,"Annu Tiwari 
+Vighnesh Manjrekar
+Sagar Mahajan
+New Machine",PF4732KW,Link ,SESA791098,Usable-NonSESA,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,20-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,,,April,,,
+184,WB-236,Returned to Lenovo,"Sunny Creado
+Anzar Ansari
+New Machine",PF472Y07,Link ,NA,Returned,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,NO,Lenovo,E15 Gen 4,20-10-2023,NA,NA,NA,NA,,,,,,,
+185,WB-237,Pooja Bhise,"Anzar
+ Shital Adkar
+New Machine",PF496HGM,Link ,SESA810225,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,25-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,,,April,,,
+186,WB-238,Nikhil Amritkar,"Chetna Khandelwal
+Sachin Mahadik
+New Machine",PF491ARM,Link ,SESA727382,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,25-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,NA,NA,April,NA,,
+187,WB-239,Amey Saitavdekar,"Kamleshwar Kocharekar
+Ketan Khatu
+New Machine",PF40W88Z,Link ,SESA727272,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,25-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,,,April,,,
+188,WB-240,Omkar Patil,New Machine,PF40WMRY,Link ,SESA755667,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,25-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,,,,,,
+189,WB-241,Durgesh Yaduvanshi,"IN Hyd (Smart Techies)
+Pooja Bhosle
+Sunil Kaushal
+Sunny Creado
+New Machine",PF496CSM,Link ,SESA677691,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,yes,Lenovo,E15 Gen 4,25-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,,,april,na,,
+190,WB-242,Prince Kumar,"Aniket Nagawade 
+Shailesh Salunke
+Nikhil Kamble
+New Machine",PF49KELV,Link ,SESA865963,In Use,Hyderabad,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,25-10-2023,1 October 23,1 October 26,1 October 27,1 October 27,,,,April,,,
+191,WB-243,Harunaharan Manoharan,"Anzar Ansari
+Bikshapathi Devatha
+New Machine",PF42NDAB,Link ,SESA785013,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,25-10-2023,1 October 23,1 October 26,1 October 27,1 October 27,,,,,,,
+192,WB-244,Karan Chauhan,"Sameer N
+Sunil Kaushal
+New Machine",PF490PLB,Link ,SESA767684,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,25-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,,,April,,,
+193,WB-245,Balsharan Kandola,New Machine,PF4918GN,Link ,SESA792631,In Use,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,25-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,NA,NA,April,,,
+194,WB-246,IN Stock HYD,"IN Stock 
+New Machine",PF40WF20,Link ,NA,Usable-SESA,Hyderabad,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,25-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,NA,NA,April,NA,,
+195,WB-247,IN Stock HYD,"Mukul Kulkarni
+Anirudha Gupta
+New Machine",PF4HMCGQ,NA,SESA845310,Usable-SESA,Mumbai,Laptop,i5 12th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E15 Gen 4,25-10-2023,1 September 23,1 September 26,1 October 27,1 October 27,,NA,NA,April,NA,,
+196,WB-248,Shubham Patil,"Shiv Shankar Gogia
+New Machine",PF4JLGAL,NA,SESA785015,In Use,Mumbai,Laptop,i5 13th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E16 Gen1,1 December 23,1 December 23,1 December 28,1 December 28,,,,,April,,,
+197,WB-249,Rumit Pathre,New Machine,PF4JTHB0,NA,SESA743836,In Use,Mumbai,Laptop,i5 13th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E16 Gen1,1 December 23,1 December 23,1 December 28,1 December 28,,,,,,,,
+198,WB-250,Animish Pande,New Machine,PF4K4J76,NA,SESA742632,In Use,Mumbai,Laptop,i5 13th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E16 Gen1,1 December 23,1 December 23,1 December 28,1 December 28,,,,,,,,
+199,WB-251,Preeti Pawar,New Machine,PF4KB70H,NA,SESA736476,In Use,Mumbai,Laptop,i5 13th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E16 Gen1,1 December 23,1 December 23,1 December 28,1 December 28,,,,,,,,
+200,WB-252,Nandini Kushwah,New Machine,PF4KBXJ8,NA,SESA786258,In Use,Hyderabad,Laptop,i5 13th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E16 Gen1,1 December 23,1 December 23,1 December 23,1 December 28,,,,,,,,
+201,WB-253,Nimesh Jethva,New Machine,PF4KAAZW,NA,SESA703933,In Use,Mumbai,Laptop,i5 13th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E16 Gen1,1 December 23,1 December 23,1 December 28,1 December 28,,,NA,NA,April,NA,,
+202,WB-254,Pavan Kumar Vallam,New Machine,PF4KBXQ3,NA,SESA525768,In Use,Hyderabad,Laptop,i5 13th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E16 Gen1,1 December 23,1 December 23,1 December 28,1 December 28,,,NA,NA,April,NA,,
+203,WB-255,Sandeep Kalisetty,"IN Hyd (Smart Techies)
+New Machine",PF4JLE1S,NA,SESA722620,In Use,Hyderabad,Laptop,i5 13th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E16 Gen1,1 December 23,1 December 23,1 December 28,1 December 28,,,NA,NA,April,NA,,
+204,WB-256,Farzan Pagdiwala,New Machine,PF4JSZSD,NA,SESA729346,In Use,Mumbai,Laptop,i5 13th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E16 Gen1,1 December 23,1 December 23,1 December 28,1 December 28,,,NA,NA,April,NA,,
+205,WB-257,Sandesh Kamble,New Machine,PF4KCQ1F,NA,SESA700113,In Use,Mumbai,Laptop,i5 13th Gen,40 GB,1 TB SSD,,Yes,Lenovo,E16 Gen1,1 December 23,1 December 23,1 December 28,1 December 28,,,NA,NA,April,NA,,
+206,WB-258,Anirudha Choudhari,New Machine,PF41QAQS,Invoice,SESA428476,In Use,Mumbai,Laptop,i5 11th Gen,32 GB,2 TB SSD,,,Lenovo,T14 Gen2,31 July 24,31 July 24,31 July 27,31 July 27,,,,,,,Yes,
+207,WB-259,IN Stock HYD,"Ashish Mehendale (DH)
+Gorakhnath choudhary
+New Machine",PG046VWM,Invoice,SESA834595,Usable-SESA,Mumbai,Laptop,i5 12th Gen,16 GB,512 GB SSD,,,Lenovo,ThinkBook 14,31 July 24,31 July 24,31 July 27,31 July 27,,,,,,,Yes,
+208,WB-260,Ashish Mehendale (DH),"Nitin Bhide
+Sameer Nakhare
+New Machine",PG046W3T,Invoice,NA,In Use,Mumbai,Laptop,i5 12th Gen,16 GB,512 GB SSD,,,Lenovo,ThinkBook 14,31 July 24,31 July 24,31 July 27,31 July 27,,,,,,,Yes,
+209,WB-261,Mamta Sawant,"In Stock (HYD Smart Techies)
+Sivaji SatrasupalliSnehil Nair
+New Machine",PF5E9ALA,Invoice,SESA847296,In Use,Mumbai,Laptop,Intel Ultra 7 (155U),40 GB,1 TB SSD,,Yes,Lenovo,"ThinkPad E16 Gen 2
+S03U00",26 June 25,26 June 25,26 June 28,26 June 28,1 June 30,,,,,,Yes,8SGX21J75548C1TJ4A901J2
+210,WB-262,Nikhil Lad,New Machine,PF5ERFEK,Invoice,SESA620430,In Use,Mumbai,Laptop,Intel Ultra 7 (155U),40 GB,1 TB SSD,,Yes,Lenovo,"ThinkPad E16 Gen 2
+S03U00",26 June 25,26 June 25,26 June 28,26 June 28,1 June 30,,,,,,Yes,8SGX21J75548C1TJ4A901NR
+211,WB-263,Ranjeet Gupta,New Machine,PF5ENKBF,Invoice,SESA721818,In Use,Mumbai,Laptop,Intel Ultra 7 (155U),40 GB,1 TB SSD,,Yes,Lenovo,"ThinkPad E16 Gen 2
+S03U00",26 June 25,26 June 25,26 June 28,26 June 28,1 June 30,,,,,,Yes,8SGX21J75548C1TJ4A901EP
+212,WB-264,Tauseef Shaikh,New Machine,PF5EMGED,Invoice,SESA690971,In Use,Mumbai,Laptop,Intel Ultra 7 (155U),40 GB,1 TB SSD,,Yes,Lenovo,"ThinkPad E16 Gen 2
+S03U00",26 June 25,26 June 25,26 June 28,26 June 28,1 June 30,,,,,,Yes,
+213,WB-265,In Stock (MUM),"Shashank Parmar 
+New Machine",PF5ENGZH,Invoice,NA,Usable-SESA,Mumbai,Laptop,Intel Ultra 7 (155U),40 GB,1 TB SSD,,Yes,Lenovo,"ThinkPad E16 Gen 2
+S03U00",26 June 25,26 June 25,26 June 28,26 June 28,1 June 30,,,,,,Yes,
+214,WB-266,Dhananjay Patil,New Machine,PF5EAYET,Invoice,SESA681629,In Use,Mumbai,Laptop,Intel Ultra 7 (155U),40 GB,1 TB SSD,,Yes,Lenovo,"ThinkPad E16 Gen 2
+S03U00",26 June 25,26 June 25,26 June 28,26 June 28,1 June 30,,,,,,Yes,
+215,WB-267,Vijay Borge ,New Machine,PF5ENKE4,Invoice,SESA677695,In Use,Mumbai,Laptop,Intel Ultra 7 (155U),40 GB,1 TB SSD,,Yes,Lenovo,"ThinkPad E16 Gen 2
+S03U00",26 June 25,26 June 25,26 June 28,26 June 28,1 June 30,,,,,,Yes,
+216,WB-268,Vikas Srivastava,New Machine,PF5EMGBR,Invoice,SESA703933,In Use,Mumbai,Laptop,Intel Ultra 7 (155U),40 GB,1 TB SSD,,Yes,Lenovo,"ThinkPad E16 Gen 2
+S03U00",26 June 25,26 June 25,26 June 28,26 June 28,1 June 30,,,,,,Yes,
+217,WB-269,Vinay Panchal,New Machine,PF5EAQMB,Invoice,SESA684524,In Use,Mumbai,Laptop,Intel Ultra 7 (155U),64 GB,1 TB SSD,,Yes,Lenovo,"ThinkPad E16 Gen 2
+S03U00",26 June 25,26 June 25,26 June 28,26 June 28,1 June 30,,,,,,Yes,
+218,WB-270,In Stock HYD/Vijay Borge,"Mamta Sawant
+New Machine",PF5ENKBR,Invoice,NA,Usable-SESA,Mumbai,Laptop,Intel Ultra 7 (155U),40 GB,1 TB SSD,,Yes,Lenovo,"ThinkPad E16 Gen 2
+S03U00",26 June 25,26 June 25,26 June 28,26 June 28,1 June 30,,,,,,,
+209,WBM-001,SET /302,NA,FBW4243,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,,,,,24 May 28,24 May 28,,,,,,,,
+210,WBM-002,IN Stock / 310,NA,3CQ2351CR8,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Compaq,Compaq R191,NA,,,,,,,,,,,
+212,WBM-004,Prolit/Amey /302,NA,87W4243,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,Dell SE2219H,,,10 November 23,,,,Power Board changed by Indresh It Solution Majiwada on 20th June 2026 with 7 days warranty ,,,,,
+213,WBM-005,Innovation Lab/302,NA,CN-01MVD1-64180-46K-0Z4T,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,Dell S2240LC,,,,,,,,,,,,
+214,WBM-006,Asset Link /302,NA,CN-01MVD1-64180-46K-0YTT,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,Dell S2240LC,,,,,,,,,,,,
+215,WBM-007,Vajragad/Ashish/302,NA,J3D6SS2,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,Dell U2419H,,,,,,,,,,,,
+216,WBM-008,Ani Sir/ 310,NA,012NTVS5T879,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,29UM69G,,,,,,,,,,,,
+217,WBM-009,CQA/Sunil/ 302,NA,BJSRS73,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE2219HX,,,,,,,,,,,,
+218,WBM-010,Asset Link /302,NA,50XQ8V3,,NA,In Use,Mumbai,Monitor,WB-02/23,NA,NA,NA,,Dell,SE222H,,,,,,,,,,,,
+219,WBM-011,Server machine / 310/ CFDH,NA,CN-0J672H-64180-19A-1D2L,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,E1709WC,,,,,,,,,,,,
+220,WBM-012,In Stock 310,NA,ZW2MHMACC01843V,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Samsung,S1B150B,,,,,,,,,,,,
+221,WBM-013,Kaustubh Sir /Raigad/ 302,NA,012NTDV5T794,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,LG,29UM69G,,,,,,,,,,,,
+222,WBM-014,In Stock / 310,NA,3CQ2451CZ7,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Compaq,Compaq R191,,,,,,,,,,,,
+223,WBM-015,310 Main foyer/ CFDH,NA,F961T73,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE2219HX,,,,,,,,,,,,
+224,WBM-016,Innovation Lab/302,NA,54NQ8V3,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE222H,,,,,,,,,,,,
+225,WBM-017,310 Main foyer/ CFDH,NA,011NTUWBU958,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,LG,25UM58,,,,,,,,,,,,
+226,WBM-018,302 / SET,NA,7396SS2,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,U2419H,,,,,,,,,,,,
+227,WBM-019,310 Main foyer/ CFDH,NA,4RZR8V3,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE222H,,,,,,,,,,,,
+228,WBM-020,310 Main foyer/ CFDH,NA,452Q8V3,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE222H,,,,,,,,,,,,
+229,WBM-021,Sinhagad/cabin/31o,NA,4M7P8V3,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE222H,,,,,,,,,,,,
+230,WBM-022,In Stock/ 310,NA,CN-09TGMK-64180-55P-064S,,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,U2412MC,,,,,,,,,,,,
+231,WBM-023,Asset Link /302,NA,54JR8V3,NA,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE222H,,,,,,,,,,,,
+232,WBM-024,Mukul Kulkarni/ 302,NA,50ZR8V3,NA,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE222H,,,,,,,,,,,,
+233,WBM-025,Panhalgad/ Cabin/ 302,NA,54DP8V3,NA,NA,In Use,Mumbai,Monitor,WB-08/23,NA,NA,NA,,Dell,SE222H,,,,,,,,,,,,
+234,WBM-026,Innovation Lab/Rohit/302,NA,54KQ8V3,NA,NA,In Use,Mumbai,Monitor,WB-08/23,NA,NA,NA,,Dell,SE222H,,,,,,,,,,,,
+235,WBM-027,Suvarnadurg/ Cabin /304,NA,HGHC9V3,NA,NA,In Use,Mumbai,Monitor,WB-09/23,NA,NA,NA,,Dell,SE222H,,,,,,,,,,,,
+236,WBM-028,Tikona / 304,NA,CN-01MVD1-6418D-3A5-042T,NA,NA,In Use,Mumbai,Monitor,WB-52,NA,NA,NA,,Dell,S2240LC,,,,,,,,,,,,
+237,WBM-038,EA/Nikhil A/ 304,NA,J0JT143,NA,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE2219HX,,,,,,,,,,,,
+238,WBM-029,CFDH/310,NA,D099B93,NA,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE2219HX,,,,,,,,,,,,
+239,WBSD-001,In Stock (MUM),"Gorakhnath choudhary
+New Headset",NA,Amazon,NA,Usable Support Device,Mumbai,Support Device,NA,NA,NA,NA,,Logitech,H111 Wired,26 November 24,,,,,,,,,,,
+240,WBSD-002,Proleit,NA,P/N-7410-209,Amazon,NA,In Use,Mumbai,Support Device,,,,,,Jabra,Jabra Spekar 410,9 April 25,9 April 25,9 April 26,,,,,,,,,
+241,WBSD-003,In Stock (MUM),NA,NA,Amazon,NA,Usable Support Device,Mumbai,Support Device,NA,NA,NA,NA,,Logitech,H111 Wired,25-Jun-25,25-Jun-25,25-Jun-25,,,,,,,,,
+242,WBSD-004,In Stock (MUM),NA,NA,Amazon,NA,Usable Support Device,Mumbai,Support Device,NA,NA,NA,NA,,Logitech,H111 Wired,25-Jun-25,25-Jun-25,25-Jun-25,,,,,,,,,
+243,WBSD-005,In Stock (MUM),NA,NA,Amazon,NA,Usable Support Device,Mumbai,Support Device,NA,NA,NA,NA,,Logitech,H111 Wired,25-Jun-25,25-Jun-25,25-Jun-25,,,,,,,,,
+244,WBSD-006,In Stock (MUM),NA,NA,Amazon,NA,Usable Support Device,Mumbai,Support Device,,,,,,Amkette,USB GIgabit to Ethernet Adapter ,25-Jun-25,25-Jun-25,25-Jun-25,,,,,,,,,
+245,WBSD-007,In Stock (MUM),NA,NA,Amazon,NA,Usable Support Device,Mumbai,Support Device,,,,,,Amkette,USB GIgabit to Ethernet Adapter ,25-Jun-25,25-Jun-25,25-Jun-25,,,,,,,,,
+246,WBSD-008,In Stock (MUM),NA,NA,Amazon,NA,Usable Support Device,Mumbai,Support Device,,,,,,Amkette,USB GIgabit to Ethernet Adapter ,25-Jun-25,25-Jun-25,25-Jun-25,,,,,,,,,
+247,WBSD-009,In Stock (MUM),NA,NA,Amazon,NA,Usable Support Device,Mumbai,Support Device,,,,,,Amkette,RTS Travel Adapter ,25-Jun-25,25-Jun-25,25-Jun-25,,,,,,,,,
+248,WBM-030,Asmita Singh - 302,NA,"ServiceTag - CCMK364
+SN-CN-O6YNTT-QDC00-59H-18UL-A00",Link,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE2725QS,16-Mar-26,16-Mar-26,16-Mar-27,NA,NA,,,,,,,
+249,WBM-031,Pratapgad/ cabin / 310,NA,"Service Tag - 4X8QG64
+SN - CN-01DX5D-BOZ00-5BH-50DE-A00",Link,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE2225HM,16-Mar-26,16-Mar-26,16-Mar-27,,,,,,,,,
+250,WBM-032,Balekilla/ cabin / 310,NA,"Service Tag - DX8QG64
+SN - CN-01DX5D-BOZ00-5BH-505E-A00",Link,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE2225HM,16-Mar-26,16-Mar-26,16-Mar-27,,,,,,,,,
+251,WBM-033,310 Main foyer/ CFDH,NA,"Service Tag - 6H3QG64
+SN - CN-01DX5D-BOZ00-5BH-72ZE-A00",Link,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE2225HM,16-Mar-26,16-Mar-26,16-Mar-27,,,,,,,,,
+252,WBM-034,Farzan pagdiwala/ 302,NA,"Service Tag - H9DQG64
+SN - CN-01DX5D-BOZ00-5BH-3PEE-A00",Link,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE2225HM,16-Mar-26,16-Mar-26,16-Mar-27,,,,,,,,,
+253,WBM-035,Pratapgad/ cabin / 302,NA,"Service Tag - 8X8QG64
+SN - CN-01DX5D-BOZ00-5BH-509E-A00",Link,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE2225HM,16-Mar-26,16-Mar-26,16-Mar-27,,,,,,,,,
+254,WBM-036,302 main foyer/fresher desk,NA,"Service Tag - 5X8QG64
+SN - CN-01DX5D-BOZ00-5BH-50CE-A00",Link,NA,In Use,Mumbai,Monitor,NA,NA,NA,NA,,Dell,SE2225HM,16-Mar-26,16-Mar-26,16-Mar-27,,,,,,,,,
+258,WBM-037,Vishalgad Meeting Room/ 302,NA,SN - 0B0X3PAYA08050A,Link,NA,In Use,Mumbai,TV,NA,NA,NA,NA,,Samsung,UA55U8100F,12-Mar-26,16-Mar-26,16-Mar-30,,,,,,,,,
+259,WBSD-010,Vishalgad Meeting Room/ 302,NA,EMEET - 250515038727,Amazon,NA,In Use,Mumbai,Support Device,NA,NA,NA,NA,,Emeet,Emeet OfficeCore M10 Plus,23-Mar-26,16-Mar-26,16-Mar-27,,,,,,,,,

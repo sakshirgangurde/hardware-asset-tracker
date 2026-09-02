@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { assetSchema } from "@/lib/validations";
-
 import { MOCK_ASSETS } from "@/lib/mockData";
 
 export const dynamic = "force-dynamic";
@@ -89,19 +88,6 @@ export async function PUT(
       }
     }
 
-    // Check unique serial if changed
-    if (data.serialNumber && data.serialNumber !== currentAsset.serialNumber) {
-      const existingSerial = await prisma.asset.findUnique({
-        where: { serialNumber: data.serialNumber },
-      });
-      if (existingSerial) {
-        return NextResponse.json(
-          { error: `Serial number "${data.serialNumber}" is already in use.` },
-          { status: 400 }
-        );
-      }
-    }
-
     const updated = await prisma.$transaction(async (tx) => {
       // If assignment employee changed
       const oldEmpId = currentAsset.employeeId;
@@ -153,6 +139,27 @@ export async function PUT(
           warrantyExpiry: data.warrantyExpiry,
           accessories: data.accessories,
           notes: data.notes,
+
+          // Custom Excel Columns
+          sesaId: data.sesaId,
+          processor: data.processor,
+          ram: data.ram,
+          storage: data.storage,
+          configuration: data.configuration,
+          inspectionDone: data.inspectionDone,
+          invoiceLink: data.invoiceLink,
+          warrantyStartDate: data.warrantyStartDate,
+          warrantyEndDate: data.warrantyEndDate,
+          extendWarrantyDate: data.extendWarrantyDate,
+          extendUpto: data.extendUpto,
+          serviceHistory: data.serviceHistory,
+          finalSummary: data.finalSummary,
+          auditDate: data.auditDate,
+          antivirus: data.antivirus,
+          charger: data.charger,
+          currentUser: data.currentUser,
+          lastUser: data.lastUser,
+          stateDetail: data.stateDetail,
         },
         include: {
           employee: true,
