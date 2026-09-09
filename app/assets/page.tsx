@@ -342,7 +342,7 @@ function AssetsContent() {
           <table className="w-full text-left text-xs text-slate-300">
             <thead className="bg-slate-850 text-[11px] uppercase tracking-wider text-slate-400 border-b border-slate-800">
               <tr>
-                <th className="py-3 px-4 font-semibold">Asset ID & SESA</th>
+                <th className="py-3 px-4 font-semibold">Asset ID</th>
                 <th className="py-3 px-4 font-semibold">Hardware Specs & Model</th>
                 <th className="py-3 px-4 font-semibold">Category</th>
                 <th className="py-3 px-4 font-semibold">Status</th>
@@ -370,71 +370,41 @@ function AssetsContent() {
                 </tr>
               ) : (
                 assets.map((asset) => {
-                  const specsChips = [
-                    asset.processor,
-                    asset.ram,
-                    asset.storage,
-                  ].filter(Boolean);
+                  const modelName = asset.name || `${asset.brand || ""} ${asset.model || ""}`.trim() || asset.model || asset.brand || "Unknown Model";
 
                   return (
                     <tr
                       key={asset.id}
                       className="hover:bg-slate-800/40 transition-colors group"
                     >
-                      {/* Asset Tag & SESA */}
+                      {/* Asset ID */}
                       <td className="py-3 px-4 whitespace-nowrap">
-                        <div className="space-y-1">
-                          <div className="flex items-center gap-1.5">
-                            <Link
-                              href={`/assets/${asset.id}`}
-                              className="font-mono font-bold text-white hover:text-emerald-400 transition-colors"
-                            >
-                              {asset.assetTag}
-                            </Link>
-                            <button
-                              onClick={() => copyToClipboard(asset.assetTag, "Asset ID")}
-                              title="Copy ID"
-                              className="opacity-0 group-hover:opacity-100 p-0.5 hover:text-white transition-opacity"
-                            >
-                              <Copy className="w-3 h-3 text-slate-400" />
-                            </button>
-                          </div>
-                          {asset.sesaId && (
-                            <span className="inline-block text-[10px] font-mono font-semibold px-1.5 py-0.5 rounded bg-indigo-950/60 text-indigo-300 border border-indigo-500/30">
-                              {asset.sesaId}
-                            </span>
-                          )}
+                        <div className="flex items-center gap-1.5">
+                          <Link
+                            href={`/assets/${asset.id}`}
+                            className="font-mono font-bold text-white hover:text-emerald-400 transition-colors"
+                          >
+                            {asset.assetTag}
+                          </Link>
+                          <button
+                            onClick={() => copyToClipboard(asset.assetTag, "Asset ID")}
+                            title="Copy ID"
+                            className="opacity-0 group-hover:opacity-100 p-0.5 hover:text-white transition-opacity"
+                          >
+                            <Copy className="w-3 h-3 text-slate-400" />
+                          </button>
                         </div>
                       </td>
 
-                      {/* Hardware Name & Specifications */}
+                      {/* Hardware Name & Model */}
                       <td className="py-3 px-4 max-w-xs">
-                        <div className="space-y-1">
-                          <Link
-                            href={`/assets/${asset.id}`}
-                            className="font-semibold text-slate-100 hover:text-emerald-300 block truncate"
-                            title={asset.name}
-                          >
-                            {asset.brand} {asset.model}
-                          </Link>
-                          {specsChips.length > 0 && (
-                            <div className="flex items-center gap-1 flex-wrap">
-                              {specsChips.map((chip, idx) => (
-                                <span
-                                  key={idx}
-                                  className="inline-flex items-center text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700"
-                                >
-                                  {chip}
-                                </span>
-                              ))}
-                            </div>
-                          )}
-                          {asset.serialNumber && (
-                            <p className="text-[10px] font-mono text-slate-500 truncate">
-                              S/N: {asset.serialNumber}
-                            </p>
-                          )}
-                        </div>
+                        <Link
+                          href={`/assets/${asset.id}`}
+                          className="font-semibold text-slate-100 hover:text-emerald-300 block truncate"
+                          title={modelName}
+                        >
+                          {modelName}
+                        </Link>
                       </td>
 
                       {/* Category */}
