@@ -49,10 +49,8 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(loginUrl);
   }
 
-  // Redirect hidden routes back to /dashboard (routes/code kept intact for future use)
+  // Redirect hidden routes back to /dashboard (employee route is active and should remain accessible)
   if (
-    pathname === "/employees" ||
-    pathname.startsWith("/employees/") ||
     pathname === "/maintenance" ||
     pathname.startsWith("/maintenance/") ||
     pathname === "/reports" ||

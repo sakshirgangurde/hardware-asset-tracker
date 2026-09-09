@@ -38,13 +38,13 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
       icon: Laptop,
       match: pathname.startsWith("/assets"),
     },
+    /* Hidden for current view (routes and code kept intact for later use):
     {
       name: "Employees",
       href: "/employees",
       icon: Users,
       match: pathname.startsWith("/employees"),
     },
-    /* Hidden for current view (routes and code kept intact for later use):
     {
       name: "Maintenance",
       href: "/maintenance",

@@ -220,13 +220,13 @@ function AssetsContent() {
 
       {/* Filter and Search Controls Bar */}
       <div className="glass-panel p-4 rounded-2xl border border-slate-800 space-y-3">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {/* Search */}
           <div className="relative sm:col-span-2 lg:col-span-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
             <input
               type="text"
-              placeholder="Search User Name, Past User, Tag, SESA, CPU..."
+              placeholder="Search by tag, asset, employee..."
               value={search}
               onChange={(e) => {
                 setSearch(e.target.value);
@@ -291,24 +291,6 @@ function AssetsContent() {
               <option value="ALL">All Offices</option>
               <option value="MUM">Mumbai</option>
               <option value="HYD">Hyderabad</option>
-            </select>
-          </div>
-
-          {/* Warranty Filter */}
-          <div>
-            <select
-              value={warranty}
-              onChange={(e) => {
-                setWarranty(e.target.value);
-                setPage(1);
-              }}
-              className="w-full px-3 py-2 rounded-xl bg-slate-800 border border-slate-700 text-xs text-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-            >
-              <option value="ALL">All Warranties</option>
-              <option value="30">Expiring in ≤ 30 Days</option>
-              <option value="60">Expiring in ≤ 60 Days</option>
-              <option value="90">Expiring in ≤ 90 Days</option>
-              <option value="expired">Expired Warranties</option>
             </select>
           </div>
         </div>

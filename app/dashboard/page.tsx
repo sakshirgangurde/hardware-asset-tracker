@@ -272,15 +272,9 @@ export default function DashboardPage() {
                 Proactive monitoring of hardware service contract expirations.
               </p>
             </div>
-            <Link
-              href="/assets?warranty=90"
-              className="text-xs text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1"
-            >
-              View Warranties <ArrowUpRight className="w-3.5 h-3.5" />
-            </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
             {/* 30 Days */}
             <div className="p-4 rounded-xl bg-rose-950/30 border border-rose-500/30 flex flex-col justify-between">
               <div className="flex justify-between items-center text-xs font-semibold text-rose-300 mb-2">
@@ -316,25 +310,6 @@ export default function DashboardPage() {
                 className="text-[11px] text-amber-300/90 hover:underline mt-2 font-medium"
               >
                 View 60-day assets →
-              </Link>
-            </div>
-
-            {/* 90 Days */}
-            <div className="p-4 rounded-xl bg-blue-950/30 border border-blue-500/30 flex flex-col justify-between">
-              <div className="flex justify-between items-center text-xs font-semibold text-blue-300 mb-2">
-                <span>Expiring ≤ 90 Days</span>
-                <span className="px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 text-[10px] font-bold">
-                  Upcoming
-                </span>
-              </div>
-              <div className="text-3xl font-black text-blue-200">
-                {kpis?.warrantiesExpiring90Days ?? 0}
-              </div>
-              <Link
-                href="/assets?warranty=90"
-                className="text-[11px] text-blue-300/90 hover:underline mt-2 font-medium"
-              >
-                View 90-day assets →
               </Link>
             </div>
           </div>

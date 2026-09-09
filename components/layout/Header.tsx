@@ -80,18 +80,6 @@ export function Header({
         >
           <Menu className="w-5 h-5" />
         </button>
-
-        {/* Global Search Bar */}
-        <form onSubmit={handleSearchSubmit} className="relative w-full max-w-xs sm:max-w-sm">
-          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-          <input
-            type="text"
-            placeholder="Search tags, assets, employees..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-9 pr-4 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-xs sm:text-sm text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 transition-all"
-          />
-        </form>
       </div>
 
       {/* Right section: Office Location Selector + User Menu */}
